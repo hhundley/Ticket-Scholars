@@ -20,14 +20,14 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NateDogg97/techBlog.git"
+    "url": "git+https://github.com/hhundley/Ticket-Scholars"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NateDogg97/techBlog/issues"
+    "url": "https://github.com/hhundley/Ticket-Scholars"
   },
-  "homepage": "https://github.com/NateDogg97/techBlog#readme",
+  "homepage": "https://github.com/hhundley/Ticket-Scholars",
   "description": ""
 }
