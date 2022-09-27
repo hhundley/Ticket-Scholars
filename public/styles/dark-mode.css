@@ -26,7 +26,7 @@
 
 [data-theme="dark"] .bg-light {
   background-color: #222 !important;
-  transition: all .4s;
+
 }
 
 [data-theme="dark"] .bg-white {

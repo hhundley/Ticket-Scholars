@@ -50,5 +50,6 @@ function resetTheme() {
   } else {
     document.body.setAttribute("data-theme", "light");
     label.innerHTML = '<i class="fa-solid fa-moon fa-lg"></i>';
+    localStorage.setItem("darkSwitch", "light");
   }
 }
