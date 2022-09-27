@@ -1,0 +1,17 @@
+.title, .search, form {
+    display: flex;
+    border-radius: 30px;
+}
+input {
+    padding: 0;
+    align-self: stretch;
+    background-color: transparent;
+    border: 0px;
+}
+.anchors {
+    margin-left: auto;
+}
+input:focus {
+    outline: none;
+    border: 0px;
+}

@@ -18,7 +18,7 @@ window.addEventListener("load", function () {
  * to store the value of the HTML switch. If the switch was already switched to
  * 'on' it will set an HTML attribute to the body named: 'data-theme' to a 'dark'
  * value. If it is the first time opening the page, or if the switch was off the
- * 'data-theme' attribute will not be set.
+ * 'data-theme' attribute will be set to light mode.
  * @return {void}
  */
 function initTheme() {

@@ -51,6 +51,10 @@
   color: #5D3FD3 !important;
 }
 
+[data-theme="dark"] .text-dark {
+  color: #eee !important
+}
+
 .theme-color {
   color: #5D3FD3;
   transition: all .4s;
