@@ -1,0 +1,42 @@
+.title, .search, form {
+    display: flex;
+    border-radius: 30px;
+    vertical-align: baseline;
+}
+.search {
+    background-color: #e5e4e2;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+.search i {
+    transition: none;
+}
+h2 {
+    align-self: center;
+}
+input {
+    padding: 0;
+    align-self: stretch;
+    background-color: transparent;
+    border: 0px;
+}
+.anchors {
+    margin-left: auto;
+}
+input:focus {
+    outline: none;
+    border: 0px;
+}
+.breadcrumb {
+    background-color: transparent;
+}
+header {
+    border-bottom: 1px solid grey;
+    margin-bottom: 50px;
+}
+.card {
+    border: none;
+    background-color: transparent;
+}
