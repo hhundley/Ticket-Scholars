@@ -1,7 +1,13 @@
-
 .title, .search, form {
     display: flex;
     border-radius: 30px;
+    vertical-align: baseline;
+}
+.search {
+    background-color: #e5e4e2;
+}
+h2 {
+    align-self: center;
 }
 input {
     padding: 0;
@@ -15,4 +21,7 @@ input {
 input:focus {
     outline: none;
     border: 0px;
+}
+.breadcrumb {
+    background-color: transparent;
 }

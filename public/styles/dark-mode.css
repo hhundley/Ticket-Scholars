@@ -10,8 +10,9 @@
   transition: all .4s;
 }
 
-[data-theme="light"] {
-  transition: .4s;
+[data-theme="light"] .search {
+    transition: .4s;
+    transition-timing-function: ease;
 }
 
 [data-theme="dark"] .bg-black {
@@ -26,7 +27,6 @@
 
 [data-theme="dark"] .bg-light {
   background-color: #222 !important;
-
 }
 
 [data-theme="dark"] .bg-white {
@@ -36,6 +36,10 @@
 
 [data-theme="dark"] .custom-control-label.pl-2 {
   padding-left: 3px !important;
+}
+
+[data-theme="dark"] .search {
+    background-color: #222;
 }
 
 [data-theme="dark"] .theme-color {
@@ -52,7 +56,7 @@
 }
 
 [data-theme="dark"] .text-dark {
-  color: #eee !important
+  color: #eee !important;
 }
 
 .theme-color {
