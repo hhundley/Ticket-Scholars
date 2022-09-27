@@ -20,14 +20,14 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hhundley/Ticket-Scholars"
+    "url": "git+https://github.com/hhundley/Ticket-Scholars.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hhundley/Ticket-Scholars"
+    "url": "https://github.com/hhundley/Ticket-Scholars/issues"
   },
-  "homepage": "https://github.com/hhundley/Ticket-Scholars",
+  "homepage": "https://github.com/hhundley/Ticket-Scholars#readme",
   "description": ""
 }
