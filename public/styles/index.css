@@ -50,5 +50,11 @@ header {
 }
 footer {
     border-top: 1px solid grey;
-    margin: 0px 0px 0px 0px;
+}
+.footer {
+    display: flex;
+    text-align: start;
+}
+.divColumn {
+    
 }
