@@ -44,3 +44,11 @@ header {
     display: flex;
     justify-content: center;
 }
+.newsLetter {
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+footer {
+    border-top: 1px solid grey;
+    margin: 0px 0px 0px 0px;
+}
