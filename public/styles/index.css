@@ -16,6 +16,7 @@ a {
 }
 .search i {
     transition: none;
+    align-self: center;
 }
 h2, h3 {
     align-self: center;
