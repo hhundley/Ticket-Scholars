@@ -55,6 +55,13 @@ footer {
     display: flex;
     text-align: start;
 }
-.divColumn {
-    
+.divColumn ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+li {
+    line-height: 30px;
+}
+.securityList {
+    font-size: smaller;
 }
