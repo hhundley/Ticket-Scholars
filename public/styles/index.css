@@ -13,10 +13,10 @@
 .search i {
     transition: none;
 }
-h2 {
+h2, h3 {
     align-self: center;
 }
-input {
+#searchBar {
     padding: 0;
     align-self: stretch;
     background-color: transparent;
@@ -39,4 +39,8 @@ header {
 .card {
     border: none;
     background-color: transparent;
+}
+.h3Deals {
+    display: flex;
+    justify-content: center;
 }
