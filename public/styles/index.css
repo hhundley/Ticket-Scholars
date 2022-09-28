@@ -1,4 +1,5 @@
 .title, .search, form {
+    padding: 10px;
     display: flex;
     border-radius: 30px;
     vertical-align: baseline;
@@ -9,6 +10,9 @@
     -moz-transition: .4s;
     -o-transition: .4s;
     transition: .4s;
+}
+a {
+    font-weight: bold;
 }
 .search i {
     transition: none;
@@ -30,6 +34,7 @@ input:focus {
     border: 0px;
 }
 .breadcrumb {
+    font-weight: bold;
     background-color: transparent;
 }
 header {
