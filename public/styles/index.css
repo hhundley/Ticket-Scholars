@@ -17,10 +17,10 @@ a {
 .search i {
     transition: none;
 }
-h2 {
+h2, h3 {
     align-self: center;
 }
-input {
+#searchBar {
     padding: 0;
     align-self: stretch;
     background-color: transparent;
@@ -44,4 +44,29 @@ header {
 .card {
     border: none;
     background-color: transparent;
+}
+.h3Deals {
+    display: flex;
+    justify-content: center;
+}
+.newsLetter {
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+footer {
+    border-top: 1px solid grey;
+}
+.footer {
+    display: flex;
+    text-align: start;
+}
+.divColumn ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+li {
+    line-height: 30px;
+}
+.securityList {
+    font-size: smaller;
 }
