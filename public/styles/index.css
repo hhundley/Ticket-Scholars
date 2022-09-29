@@ -45,3 +45,33 @@ header {
     border: none;
     background-color: transparent;
 }
+
+/* Media Queries */
+
+@media print {
+    h3:after {
+        content: ' - PRINT';
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 320px) and (orientation: landscape) {
+    h3:after {
+        content: ' - PHONE LANDSCAPE';
+        display: inline;
+    }
+}
+
+@media only screen  and (min-width: 320px) and (orientation: portrait) {
+    h3::after{
+        content: ' - PHONE PORTRAIT';
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    h3:after {
+        content: ' - TABLET LANDSCAPE';
+        display: inline;
+    }
+}
