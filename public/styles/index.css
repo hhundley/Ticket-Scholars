@@ -28,7 +28,9 @@ h2, h3 {
     border: 0px;
 }
 .anchors {
-    margin-left: auto;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 input:focus {
     outline: none;
