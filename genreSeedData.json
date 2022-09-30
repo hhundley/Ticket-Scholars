@@ -1,0 +1,29 @@
+[
+    {
+        "genre" : "rock",
+        "starting_date": "2022-10-01"
+    },
+
+    {
+        "genre" : "bluegrass",
+        "starting_date": "2022-10-02"
+    },
+
+    {
+        "genre" : "pop",
+        "starting_date": "2022-10-03"
+    },
+
+    {
+        "genre" : "edm",
+        "starting_date": "2022-10-04"
+    },
+
+    {
+        "genre" : "country",
+        "starting_date": "2022-10-01"
+    }
+
+
+
+]
