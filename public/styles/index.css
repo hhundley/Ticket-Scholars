@@ -4,6 +4,9 @@
     border-radius: 30px;
     vertical-align: baseline;
 }
+.navbar {
+    padding: 0px;
+}
 .search {
     background-color: #e5e4e2;
     -webkit-transition: .4s;
