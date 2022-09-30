@@ -15,37 +15,44 @@ productContainers.forEach((item, i) => {
     })
 })
 
-var imgArray = new Array();
+carousel();
+carousel();
+carousel();
+
+function carousel(){
+
+    var imgArray = new Array();
 
 imgArray[0] = new Image();
-imgArray[0] = './images/01-blossoming-apricot.jpg';
+imgArray[0] = '../../public/images/01-blossoming-apricot.jpg';
 
 imgArray[1] = new Image();
-imgArray[1] = './images/02-cosmos-flowers.jpg';
+imgArray[1] = '../../public/images/02-cosmos-flowers.jpg';
 
 imgArray[2] = new Image();
-imgArray[2] = './images/03-sand-sea-summer.jpg';
+imgArray[2] = '../../public/images/03-sand-sea-summer.jpg';
 
 imgArray[3] = new Image();
-imgArray[3] = './images/04-beach-chairs.jpg';
+imgArray[3] = '../../public/images/04-beach-chairs.jpg';
 
 imgArray[4] = new Image();
-imgArray[4] = './images/05-beach-sunrise.jpg';
+imgArray[4] = '../../public/images/05-beach-sunrise.jpg';
 
 imgArray[5] = new Image();
-imgArray[5] = './images/06-fall-colors.jpg';
+imgArray[5] = '../../public/images/06-fall-colors.jpg';
 
 imgArray[6] = new Image();
-imgArray[6] = './images/07-autumn-mountains.jpg';
+imgArray[6] = '../../public/images/07-autumn-mountains.jpg';
 
 imgArray[7] = new Image();
-imgArray[7] = './images/08-frozen-river.jpg';
+imgArray[7] = '../../public/images/08-frozen-river.jpg';
 
 imgArray[8] = new Image();
-imgArray[8] = './images/09-winter-home.jpg';
+imgArray[8] = '../../public/images/09-winter-home.jpg';
 
-var concertName = ['Liam',  'Olivia', 'Noah', 'Emma', 'Oliver', 'Charlotte', 'Elijah', 'Amelia', 'James'];
-var concertDescription = ['description', 'description', 'description', 'description', 'description', 'description', 'description', 'description', 'description',];
+var eventName = ['Liam',  'Olivia', 'Noah', 'Emma', 'Oliver', 'Charlotte', 'Elijah', 'Amelia', 'James'];
+var eventLocation = ['Location', 'Location', 'Location', 'Location', 'Location', 'Location', 'Location', 'Location', 'Location',];
+var eventTime = ['Date & Time', 'Date & Time', 'Date & Time', 'Date & Time', 'Date & Time', 'Date & Time', 'Date & Time', 'Date & Time', 'Date & Time']
 
 for( var i = 0; i < imgArray.length; i++){
     const container = document.getElementById('container');
@@ -54,8 +61,10 @@ for( var i = 0; i < imgArray.length; i++){
     const img = document.createElement('img');
     const addTicket = document.createElement('button');
     const information = document.createElement('div');
-    const title = document.createElement('h1');
-    const description = document.createElement('p');
+    const title = document.createElement('h5');
+    const location = document.createElement('p');
+    const time = document.createElement('h5');
+
     card.className = 'product-card';
     imgContainer.className = 'product-image';
     img.className = 'product-image';
@@ -64,13 +73,17 @@ for( var i = 0; i < imgArray.length; i++){
     img.src = imgArray[i];
     img.className = 'product-image';
     information.className = 'product-info';
-    title.className = 'product-Ticket';
-    title.textContent = concertName[i];
-    description.className = 'product-short-description';
-    description.textContent = concertDescription[i];
+    title.className = 'card-title';
+    title.textContent = eventName[i];
+    location.className = 'card-text';
+    location.textContent = eventLocation[i];
+    time.className = 'card-title';
+    time.textContent = eventTime[i];
 
     container.append(card);
     card.append(imgContainer, information);
     imgContainer.append(img, addTicket);
-    information.append(title, description);
+    information.append(time, title, location);
+}
+
 }
