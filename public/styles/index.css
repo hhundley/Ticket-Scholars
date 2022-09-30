@@ -4,6 +4,9 @@
     border-radius: 30px;
     vertical-align: baseline;
 }
+.title {
+    flex-wrap: wrap;
+}
 .navbar {
     padding: 0px;
 }
@@ -205,3 +208,6 @@ li {
     opacity: 1;
   }
   /* end for carousel style*/
+
+/* Responsive CSS Below */
+
