@@ -1,4 +1,4 @@
-
+var logo = document.getElementById('logo');
 var label = document.getElementById('label');
 var darkSwitch = document.getElementById("darkSwitch");
 window.addEventListener("load", function () {
@@ -29,9 +29,11 @@ function initTheme() {
   if (darkThemeSelected) {
     document.body.setAttribute("data-theme", "dark");
     label.innerHTML ='<i class="fa-solid fa-sun fa-lg"></i>';
+    logo.src = '../../public/images/ticketmaster - 12@2x.png';
   } else {
     document.body.setAttribute("data-theme", "light");
     label.innerHTML = '<i class="fa-solid fa-moon fa-lg"></i>';
+    logo.src = '../../public/images/ticketmaster - 11@2x.png';
   }
 }
 
@@ -47,9 +49,11 @@ function resetTheme() {
     document.body.setAttribute("data-theme", "dark");
     label.innerHTML = '<i class="fa-solid fa-sun fa-lg"></i>';    
     localStorage.setItem("darkSwitch", "dark");
+    logo.src = '../../public/images/ticketmaster - 12@2x.png';
   } else {
     document.body.setAttribute("data-theme", "light");
     label.innerHTML = '<i class="fa-solid fa-moon fa-lg"></i>';
     localStorage.setItem("darkSwitch", "light");
+    logo.src = '../../public/images/ticketmaster - 11@2x.png';
   }
 }
