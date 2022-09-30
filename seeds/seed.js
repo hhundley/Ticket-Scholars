@@ -1,9 +1,10 @@
 // seeding the db
 
 const { application } = require('express')
-const db = require('./models/index')
-const events = require('./models/Events').event
-const genre = require('./models/Genres').genre
+const sequelize = require('../config/connection')
+const db = require('../config/connection')
+const events = require('../models/Events')
+const genre = require('../models/Genres')
 
 
 const eventsForTicketScholars = [
@@ -82,18 +83,15 @@ const genreForTicketScholars = [
 
 ]
 
-const seed = () => {
-    return events.bulkCreate(eventsForTicketScholars)
-     .then(() => genre.bulkCreate(genreForTicketScholars))
+const seed = async () => {
+    await sequelize.sync({force: true});
+
+    await events.bulkCreate(eventsForTicketScholars);
+    await genre.bulkCreate(genreForTicketScholars);
+
+    process.exit(0);
 }
 
-seed()
-.then(() => {
- process.exit();   
- });
+seed();
 
- db.sync({ force: false})
- .then(() => {
-    console.log('db synced')
-    application.listen(PORT, () => console.log(`Your server is running on ${PORT}`))
- });
+
