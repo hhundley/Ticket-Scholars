@@ -15,12 +15,6 @@ productContainers.forEach((item, i) => {
     })
 })
 
-carousel();
-carousel();
-carousel();
-
-function carousel(){
-
     var imgArray = new Array();
 
 imgArray[0] = new Image();
@@ -55,35 +49,85 @@ var eventLocation = ['Location', 'Location', 'Location', 'Location', 'Location',
 var eventTime = ['Date & Time', 'Date & Time', 'Date & Time', 'Date & Time', 'Date & Time', 'Date & Time', 'Date & Time', 'Date & Time', 'Date & Time']
 
 for( var i = 0; i < imgArray.length; i++){
-    const container = document.getElementById('container');
-    const card = document.createElement('div');
-    const imgContainer = document.createElement('div');
-    const img = document.createElement('img');
-    const addTicket = document.createElement('button');
-    const information = document.createElement('div');
-    const title = document.createElement('h5');
-    const location = document.createElement('p');
-    const time = document.createElement('h5');
+    const container1 = document.getElementById('container1');
+    const container2 = document.getElementById('container2');
+    const container3 = document.getElementById('container3');
+    const card1 = document.createElement('div');
+    const card2 = document.createElement('div');
+    const card3 = document.createElement('div');
+    const imgContainer1 = document.createElement('div');
+    const imgContainer2 = document.createElement('div');
+    const imgContainer3 = document.createElement('div');
+    const img1 = document.createElement('img');
+    const img2 = document.createElement('img');
+    const img3 = document.createElement('img');
+    const addTicket1 = document.createElement('button');
+    const addTicket2 = document.createElement('button');
+    const addTicket3 = document.createElement('button');
+    const information1 = document.createElement('div');
+    const information2 = document.createElement('div');
+    const information3 = document.createElement('div');
+    const title1 = document.createElement('h5');
+    const title2 = document.createElement('h5');
+    const title3 = document.createElement('h5');
+    const location1 = document.createElement('p');
+    const location2 = document.createElement('p');
+    const location3 = document.createElement('p');
+    const time1 = document.createElement('h5');
+    const time2 = document.createElement('h5');
+    const time3 = document.createElement('h5');
 
-    card.className = 'product-card';
-    imgContainer.className = 'product-image';
-    img.className = 'product-image';
-    addTicket.className = 'card-btn';
-    addTicket.textContent = 'Add Ticket';
-    img.src = imgArray[i];
-    img.className = 'product-image';
-    information.className = 'product-info';
-    title.className = 'card-title';
-    title.textContent = eventName[i];
-    location.className = 'card-text';
-    location.textContent = eventLocation[i];
-    time.className = 'card-title';
-    time.textContent = eventTime[i];
+    card1.className = 'product-card';
+    card2.className = 'product-card';
+    card3.className = 'product-card';
+    imgContainer1.className = 'product-image';
+    imgContainer2.className = 'product-image';
+    imgContainer3.className = 'product-image';
+    img1.className = 'product-image';
+    img2.className = 'product-image';
+    img3.className = 'product-image';
+    img1.src = imgArray[i];
+    img2.src = imgArray[i];
+    img3.src = imgArray[i];
+    addTicket1.className = 'card-btn';
+    addTicket2.className = 'card-btn';
+    addTicket3.className = 'card-btn';
+    addTicket1.textContent = 'Add Ticket';
+    addTicket2.textContent = 'Add Ticket';
+    addTicket3.textContent = 'Add Ticket';
+    information1.className = 'product-info';
+    information2.className = 'product-info';
+    information3.className = 'product-info';
+    title1.className = 'card-title';
+    title2.className = 'card-title';
+    title3.className = 'card-title';
+    title1.textContent = eventName[i];
+    title2.textContent = eventName[i];
+    title3.textContent = eventName[i];
+    location1.className = 'card-text';
+    location2.className = 'card-text';
+    location3.className = 'card-text';
+    location1.textContent = eventLocation[i];
+    location2.textContent = eventLocation[i];
+    location3.textContent = eventLocation[i];
+    time1.className = 'card-title';
+    time2.className = 'card-title';
+    time3.className = 'card-title';
+    time1.textContent = eventTime[i];
+    time2.textContent = eventTime[i];
+    time3.textContent = eventTime[i];
 
-    container.append(card);
-    card.append(imgContainer, information);
-    imgContainer.append(img, addTicket);
-    information.append(time, title, location);
+    container1.append(card1);
+    container2.append(card2);
+    container3.append(card3);
+    card1.append(imgContainer1, information1);
+    card2.append(imgContainer2, information2);
+    card3.append(imgContainer3, information3);
+    imgContainer1.append(img1, addTicket1);
+    imgContainer2.append(img2, addTicket2);
+    imgContainer3.append(img3, addTicket3);
+    information1.append(time1, title1, location1);
+    information2.append(time2, title2, location2);
+    information3.append(time3, title3, location3);
 }
 
-}
