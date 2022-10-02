@@ -47,6 +47,29 @@ router.get('/concerts/:id', async (req,res) => {
   }
 });
 
+// Require user to be logged in to access the profile page
+// Todo: ask where profile data will be displayed. Will we have profile page, or is saved events the profile page
+router.get('/profile', withAuth, async (req, res) => {
+  try {
+    // Find user based w/ session id
+    const userData = await User.findByPk(req.session.user_id, {
+      attributes: { exclude: ['password'] },
+      include: [{ model: Events }],
+    });
+
+    // serialize user data
+    const user = userData.get({ plain: true });
+
+  // render user data on profile page
+    res.render('profile', {
+      ...user,
+      logged_in: true
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get("/login", (req, res) => {
   if (req.session.logged_in) {
     res.redirect("/");
