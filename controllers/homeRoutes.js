@@ -5,21 +5,14 @@ const withAuth = require("../utils/auth");
 router.get("/", async (req, res) => {
   try {
     // retreive concerts and required attributes. Serialize concerts as plain js objects
-    const concertData = await Events.findAll({
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
-    });
+    const concertData = await Events.findAll();
 
     const concerts = concertData.map((concert) => concert.get({ plain: true }));
 
     // render onjects and session id in homepage handlebars template
-    res.render('homepage', { 
-      concerts, 
-      logged_in: req.session.logged_in 
+    res.render("homepage", {
+      concerts,
+      logged_in: req.session.logged_in,
     });
   } catch (err) {
     res.status(500).json(err);
@@ -28,20 +21,15 @@ router.get("/", async (req, res) => {
 
 // retreive concert by id and required attributes. Serialize concert as plain js objects
 // Todo: check the "concerts" path and make sure "Concert" render is right when the view is created for the concert details page.
-router.get('/concerts/:id', async (req,res) => {
+router.get("/concerts/:id", async (req, res) => {
   try {
-    const concertData = await Events.findPyPk(req.params.id, {
-      include: [
-        {model: User,
-        attributes: ['name'],},
-      ],
-    })
-    const concert = concertDta.fet({plain:true});
+    const concertData = await Events.findPyPk(req.params.id);
+    const concert = concertData.get({ plain: true });
     // render onjects and session id in homepage handlebars template
-    res.render('concert', {
-      ...concert, logged_in: req.session.logged_in
+    res.render("concert", {
+      ...concert,
+      logged_in: req.session.logged_in,
     });
-
   } catch (err) {
     res.status(500).json(err);
   }
@@ -49,21 +37,22 @@ router.get('/concerts/:id', async (req,res) => {
 
 // Require user to be logged in to access the profile page
 // Todo: ask where profile data will be displayed. Will we have profile page, or is saved events the profile page
-router.get('/profile', withAuth, async (req, res) => {
+router.get("/profile", withAuth, async (req, res) => {
   try {
     // Find user based w/ session id
     const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ['password'] },
+      attributes: { exclude: ["password"] },
+      // Do we need a different model?
       include: [{ model: Events }],
     });
 
     // serialize user data
     const user = userData.get({ plain: true });
 
-  // render user data on profile page
-    res.render('profile', {
+    // render user data on profile page
+    res.render("profile", {
       ...user,
-      logged_in: true
+      logged_in: true,
     });
   } catch (err) {
     res.status(500).json(err);
