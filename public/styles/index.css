@@ -1,17 +1,83 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 123, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler {
+  border-color: rgb(0, 123, 255);
+}
+.navbar-nav {
+  align-items: center;
+}
+.nav-link{
+  text-align: end;
+  font-weight: 600;
+}
+.navbar-expand-md .navbar-collapse {
+  justify-content: flex-end;
+} 
+.jumbotron {
+  background-image: url(../images/01-blossoming-apricot.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.ticket-card {
+  padding: 8px 12px;
+  flex-direction: column;
+  margin-bottom: 40px;
+  border-bottom: 1px solid grey;
+}
+.description {
+  display: flex;
+  flex: 1 0 auto;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}   
+.button-div {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 10px;   
+}
+.btn {
+  letter-spacing: .5px;
+}
+@media (max-width: 767px) {
+.navbar-nav {
+  align-items: flex-end;
+}
+}
+@media (max-width: 424px) {
+.navbar {
+  flex-direction: column;
+  align-items: unset;
+}
+.navbar-nav {
+  align-items: unset;
+}
+.navbar-toggler {
+  align-self: center;
+}
+.navbar.navbar-expand-md{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.navbar-brand.logo {
+  justify-self: center;
+}
+@media (max-width:424px) {
+html, body {
+  min-width: 424px;
+}
+}
+}
 .title, .search, form {
     padding: 10px;
     display: flex;
     border-radius: 30px;
     vertical-align: baseline;
-}
-.title {
-    flex-wrap: wrap;
-}
-.navbar {
-    padding: 0px;
-}
-.left {
-  justify-content: flex-start; 
 }
 .search {
     background-color: #e5e4e2;
@@ -20,11 +86,7 @@
     -o-transition: .4s;
     transition: .4s;
 }
-a {
-    font-weight: bold;
-}
 .search i {
-    transition: none;
     align-self: center;
 }
 h2, h3 {
@@ -35,11 +97,6 @@ h2, h3 {
     align-self: stretch;
     background-color: transparent;
     border: 0px;
-}
-.anchors {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: flex-end;
 }
 input:focus {
     outline: none;
@@ -192,6 +249,3 @@ li {
     opacity: 1;
   }
   /* end for carousel style*/
-
-/* Responsive CSS Below */
-
