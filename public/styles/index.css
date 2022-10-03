@@ -7,6 +7,9 @@
 .navbar {
     padding: 0px;
 }
+.left {
+  justify-content: flex-start; 
+}
 .search {
     background-color: #e5e4e2;
     -webkit-transition: .4s;
@@ -33,7 +36,7 @@ h2, h3 {
 .anchors {
     display: inline-flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 input:focus {
     outline: none;
