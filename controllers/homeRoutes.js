@@ -20,13 +20,13 @@ router.get("/", async (req, res) => {
 });
 
 // retreive concert by id and required attributes. Serialize concert as plain js objects
-// Todo: check the "concerts" path and make sure "Concert" render is right when the view is created for the concert details page.
+// Todo: Check render page name when handlebars file is created.
 router.get("/concerts/:id", async (req, res) => {
   try {
     const concertData = await Events.findPyPk(req.params.id);
     const concert = concertData.get({ plain: true });
     // render onjects and session id in homepage handlebars template
-    res.render("concert", {
+    res.render("checkout", {
       ...concert,
       logged_in: req.session.logged_in,
     });
@@ -37,6 +37,7 @@ router.get("/concerts/:id", async (req, res) => {
 
 // Require user to be logged in to access the profile page
 // Todo: ask where profile data will be displayed. Will we have profile page, or is saved events the profile page
+// Todo: Do we actually need this?
 router.get("/profile", withAuth, async (req, res) => {
   try {
     // Find user based w/ session id
@@ -53,6 +54,28 @@ router.get("/profile", withAuth, async (req, res) => {
     res.render("profile", {
       ...user,
       logged_in: true,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+// Todo: add get route for tickets
+
+
+// Get route for tickets
+router.get("/profile", withAuth, async (req, res) => {
+  try {
+    // retreive concerts and required attributes. Serialize concerts as plain js objects
+    // Todo: update model name
+    const savedTicketData = await savedTickets.findAll();
+
+    const savedTickets = savedTicketData.map((savedTickets) => savedTickets.get({ plain: true }));
+
+    // render objects and session id in homepage handlebars template
+    res.render("profile", {
+      savedTickets,
+      logged_in: req.session.logged_in,
     });
   } catch (err) {
     res.status(500).json(err);
