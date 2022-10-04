@@ -155,11 +155,12 @@ li {
   }
   
   .product-category {
-    padding: 0 10vw;
+    padding: 0 4vw;
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 40px;
     text-transform: capitalize;
+    cursor: default;
   }
   
   .product-container {
@@ -210,7 +211,7 @@ li {
   }
   
   .card-btn:hover {
-    background: #ff7d7d;
+    background: #5D3FD3;
     color: #fff;
   }
   
