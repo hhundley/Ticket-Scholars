@@ -113,17 +113,16 @@ p {
 }
 #sidebar {
     /* don't forget to add all the previously mentioned styles here too */
-    background: #7386D5;
-    color: #fff;
-    transition: all 0.3s;
+    background: #007bff36;
+    transition: all 0.3s, color 0s;
 }
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #007bffad;
 }
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid #007bff;
 }
 #sidebar ul p {
     color: #fff;
@@ -135,18 +134,20 @@ p {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #7386D5;
-    background: #fff;
+    background: #007bff;
 }
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    background: #007bff;
 }
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #007bff;
 }
+
+/* Main Content Styles */
+
 #content {
     width: 100%;
     padding: 20px;
