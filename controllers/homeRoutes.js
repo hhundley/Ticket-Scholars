@@ -1,11 +1,13 @@
 const router = require("express").Router();
-const { Events, User, SavedTickets, Tickets } = require("../models");
+const { Events, Genres, User, SavedTickets, Tickets } = require("../models");
 const withAuth = require("../utils/auth");
 
 router.get("/", async (req, res) => {
   try {
     // retreive concerts and required attributes. Serialize concerts as plain js objects
-    const concertData = await Events.findAll();
+    const concertData = await Events.findAll({
+      include: [{model: Genres}],
+    });
 
     const concerts = concertData.map((concert) => concert.get({ plain: true }));
 
