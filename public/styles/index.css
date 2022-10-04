@@ -84,7 +84,7 @@ html, body {
     -webkit-transition: .4s;
     -moz-transition: .4s;
     -o-transition: .4s;
-    transition: .4s;
+    transition: all .4s, color 0s;
 }
 .search i {
     align-self: center;
