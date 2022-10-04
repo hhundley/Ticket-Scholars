@@ -42,6 +42,10 @@
     background-color: #222;
 }
 
+[data-theme="dark"] .section {
+  background-color: #111;
+}
+
 [data-theme="dark"] .theme-color {
   color: #CF9FFF !important;
   transition: all .4s;
