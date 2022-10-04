@@ -23,7 +23,12 @@ router.get("/", async (req, res) => {
 // Todo: Check render page name when handlebars file is created.
 router.get("/concerts/:id", async (req, res) => {
   try {
-    const concertData = await Events.findPyPk(req.params.id);
+    const concertData = await Events.findOne({
+      where: {
+        id: req.params.id,
+      },
+      include: [{ model: Tickets }],
+    });
     const concert = concertData.get({ plain: true });
     // render onjects and session id in homepage handlebars template
     res.render("checkout", {
@@ -60,9 +65,6 @@ router.get("/profile", withAuth, async (req, res) => {
   }
 });
 
-// Todo: add get route for tickets
-
-
 // Get route for tickets
 router.get("/profile", withAuth, async (req, res) => {
   try {
@@ -70,7 +72,9 @@ router.get("/profile", withAuth, async (req, res) => {
     // Todo: update model name
     const savedTicketData = await savedTickets.findAll();
 
-    const savedTickets = savedTicketData.map((savedTickets) => savedTickets.get({ plain: true }));
+    const savedTickets = savedTicketData.map((savedTickets) =>
+      savedTickets.get({ plain: true })
+    );
 
     // render objects and session id in homepage handlebars template
     res.render("profile", {
