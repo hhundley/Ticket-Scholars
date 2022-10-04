@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const withAuth = require('../../utils/auth');
-const { Events, User } = require('../../models');
+const { Events, User, SavedTickets, Tickets } = require('../../models');
 
 // POST route for saved events
 router.post('/', withAuth, async (req, res) => {
