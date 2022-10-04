@@ -19,8 +19,12 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
+.pText {
+    line-height: 32px;
+    font-size: 24px;
+}
 .ticket-card {
-    padding: 8px 12px;
+    padding: 12px 64px;
     flex-direction: column;
     margin-bottom: 40px;
     border-bottom: 1px solid grey;
