@@ -23,7 +23,7 @@ Events.init(
       type: DataTypes.DATE,
       allowNull: false,
     },
-    filename: {
+    show_time: {
       type: DataTypes.STRING,
       allowNull: false,
     },
