@@ -47,6 +47,7 @@ Tickets.init(
       },
     },
 
+
     location: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -63,7 +64,15 @@ Tickets.init(
       references: {
         model: 'events',
         key: 'location'
-      }
+      },
+
+    event_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: "events",
+        key: "id",
+      },
+
     },
 
     user_id: {
