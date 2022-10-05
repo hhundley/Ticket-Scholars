@@ -7,12 +7,8 @@ body {
 .custom-toggler.navbar-toggler {
   border-color: rgb(0, 123, 255);
 }
-.navbar-nav {
-  align-items: center;
-}
 .nav-link{
   text-align: end;
-  font-weight: 600;
 }
 .navbar-expand-md .navbar-collapse {
   justify-content: flex-end;
