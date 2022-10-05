@@ -17,7 +17,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "Ticket to Rolling Down a Hill Tour",
         total_tickets: '45',
-        website_link : "../../public/images/image1.jpg"
+        website_link : "../../public/images/image1.jpg",
+        genres_id: 4
     },
 
     {
@@ -29,7 +30,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "Ticket to Flapjacks for Dinner World Tour",
         total_tickets: '49',
-        website_link : "../../public/images/image2.jpg"
+        website_link : "../../public/images/image2.jpg",
+        genres_id: 3
     },
 
     {
@@ -41,7 +43,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "Tickets for the Summer of 0ur Lyfes Tour",
         total_tickets: '151',
-        website_link : "../../public/images/image3.jpg"
+        website_link : "../../public/images/image3.jpg",
+        genres_id: 2
     },
 
     {
@@ -53,7 +56,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to Jazz Hands Tour",
         total_tickets: '78',
-        website_link : "../../public/images/image4.jpg"
+        website_link : "../../public/images/image4.jpg",
+        genres_id: 1
     },
 
     {
@@ -65,7 +69,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to the touring tour",
         total_tickets: '54',
-        website_link : "../../public/images/image5.jpg"
+        website_link : "../../public/images/image5.jpg",
+        genres_id: 2
     },
 
     {
@@ -77,7 +82,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to the dream tour",
         total_tickets: '88',
-        website_link : "../../public/images/image6.jpg"
+        website_link : "../../public/images/image6.jpg",
+        genres_id: 1
     },
 
     {
@@ -89,7 +95,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to the seeing sounds tour",
         total_tickets: '99',
-        website_link : "../../public/images/image7.jpg"
+        website_link : "../../public/images/image7.jpg",
+        genres_id: 1
     },
 
     {
@@ -101,7 +108,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to the Dont Tell Ma tour",
         total_tickets: '223',
-        website_link : "../../public/images/image8.jpg"
+        website_link : "../../public/images/image8.jpg",
+        genres_id: 5
     },
 
     {
@@ -113,7 +121,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to the i wanna be someone tour",
         total_tickets: '164',
-        website_link : "../../public/images/image9.jpg"
+        website_link : "../../public/images/image9.jpg",
+        genres_id: 4
     },
 
     {
@@ -125,7 +134,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to the Snack Wrap tour",
         total_tickets: '745',
-        website_link : "../../public/images/image10.jpg"
+        website_link : "../../public/images/image10.jpg",
+        genres_id: 3
     },
 
     {
@@ -137,7 +147,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to the crying world tour",
         total_tickets: '888',
-        website_link : "../../public/images/pop-image1.jpg"
+        website_link : "../../public/images/pop-image1.jpg",
+        genres_id: 3
     },
 
     {
@@ -149,7 +160,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to the Onion tour",
         total_tickets: '8',
-        website_link : "../../public/images/pop-image2.jpg"
+        website_link : "../../public/images/pop-image2.jpg",
+        genres_id: 3
     },
 
     {
@@ -161,7 +173,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to the NOW tour",
         total_tickets: '454',
-        website_link : "../../public/images/pop-image3.jpg"
+        website_link : "../../public/images/pop-image3.jpg",
+        genres_id: 4
     },
 
     {
@@ -173,7 +186,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to the Christmas Early tour",
         total_tickets: '325',
-        website_link : "../../public/images/pop-image4.jpg"
+        website_link : "../../public/images/pop-image4.jpg",
+        genres_id: 4
     },
 
     {
@@ -185,7 +199,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to the Coding  tour",
         total_tickets: '1337',
-        website_link : "../../public/images/pop-image4.jpg"
+        website_link : "../../public/images/pop-image4.jpg",
+        genres_id: 4
     },
 
     {
@@ -197,7 +212,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to the Deli tour",
         total_tickets: '411',
-        website_link : "../../public/images/pop-image5.jpg"
+        website_link : "../../public/images/pop-image5.jpg",
+        genres_id: 5
     },
 
     {
@@ -209,7 +225,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to the duolingo tour",
         total_tickets: '355525',
-        website_link : "../../public/images/pop-image6.jpg"
+        website_link : "../../public/images/pop-image6.jpg",
+        genres_id: 4
     },
 
     {
@@ -221,7 +238,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to the Coffee tour",
         total_tickets: '505',
-        website_link : "../../public/images/pop-image7.jpg"
+        website_link : "../../public/images/pop-image7.jpg",
+        genres_id: 1
     },
 
     {
@@ -233,7 +251,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to the Fried Sushi tour",
         total_tickets: '745',
-        website_link : "../../public/images/pop-image8.jpg"
+        website_link : "../../public/images/pop-image8.jpg",
+        genres_id: 1
     },
 
     {
@@ -245,7 +264,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to the Get Glad tour",
         total_tickets: '161',
-        website_link : "../../public/images/pop-image9.jpg"
+        website_link : "../../public/images/pop-image9.jpg",
+        genres_id: 1
     },
 
     {
@@ -257,7 +277,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to the wish you were here tour",
         total_tickets: '325',
-        website_link : "../../public/images/pop-image10.jpg"
+        website_link : "../../public/images/pop-image10.jpg",
+        genres_id: 1
     },
 
     {
@@ -269,7 +290,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to tell me why tour",
         total_tickets: '325',
-        website_link : "../../public/images/rock-image1.jpg"
+        website_link : "../../public/images/rock-image1.jpg",
+        genres_id: 1
     },
 
     {
@@ -281,7 +303,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to aint nothing but a heartache tour",
         total_tickets: '325',
-        website_link : "../../public/images/rock-image2.jpg"
+        website_link : "../../public/images/rock-image2.jpg",
+        genres_id: 1
     },
 
     {
@@ -293,7 +316,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to 1000 miles",
         total_tickets: '625',
-        website_link : "../../public/images/rock-image3.jpg"
+        website_link : "../../public/images/rock-image3.jpg",
+        genres_id: 4
     },
 
     {
@@ -305,7 +329,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to Biscuits and Gravy tour",
         total_tickets: '425',
-        website_link : "../../public/images/rock-image4.jpg"
+        website_link : "../../public/images/rock-image4.jpg",
+        genres_id: 4
     },
 
     {
@@ -317,7 +342,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to Running out of ideas tour",
         total_tickets: '10',
-        website_link : "../../public/images/rock-image5.jpg"
+        website_link : "../../public/images/rock-image5.jpg",
+        genres_id: 2
     },
 
     {
@@ -329,7 +355,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to Beach Party tour",
         total_tickets: '550',
-        website_link : "../../public/images/rock-image6.jpg"
+        website_link : "../../public/images/rock-image6.jpg",
+        genres_id: 1
     },
 
     {
@@ -341,7 +368,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to green pasters tour",
         total_tickets: '85',
-        website_link : "../../public/images/rock-image7.jpg"
+        website_link : "../../public/images/rock-image7.jpg",
+        genres_id: 4
     },
 
     {
@@ -353,7 +381,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to Mulching tour",
         total_tickets: '825',
-        website_link : "../../public/images/rock-image8.jpg"
+        website_link : "../../public/images/rock-image8.jpg",
+        genres_id: 5
     },
 
     {
@@ -365,7 +394,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to do a kickflip tour",
         total_tickets: '425',
-        website_link : "../../public/images/rock-image9.jpg"
+        website_link : "../../public/images/rock-image9.jpg",
+        genres_id: 5
     },
 
     {
@@ -377,7 +407,8 @@ const eventsForTicketScholars = [
         city : "Austin",
         description: "ticket to MAYHAM tour",
         total_tickets: '425',
-        website_link : "../../public/images/rock-image10.jpg"
+        website_link : "../../public/images/rock-image10.jpg",
+        genres_id: 5
     }
 
 
@@ -417,8 +448,12 @@ const genreForTicketScholars = [
 const seed = async () => {
     await sequelize.sync({force: true});
 
-    await Events.bulkCreate(eventsForTicketScholars);
     await Genres.bulkCreate(genreForTicketScholars);
+    for (const event of eventsForTicketScholars) {
+        await Events.create({
+          ...event,
+        });
+      }
 
     process.exit(0);
 }
