@@ -15,6 +15,12 @@ productContainers.forEach((item, i) => {
   });
 });
 
+const ticketcart = [...document.querySelectorAll(".card-btn")];
+
+ticketcart.addEventListener("click", () => {
+  redirect('/');
+});
+
 var imgArray = new Array();
 
 imgArray[0] = new Image();
@@ -111,39 +117,67 @@ imgArray2[8] = "../../public/images/rock-image9.jpg";
 imgArray2[9] = new Image();
 imgArray2[9] = "../../public/images/rock-image10.jpg";
 
-var eventName = [
-  "Liam",
-  "Olivia",
-  "Noah",
-  "Emma",
-  "Oliver",
-  "Charlotte",
-  "Elijah",
-  "Amelia",
-  "James",
-];
-var eventLocation = [
-  "Location",
-  "Location",
-  "Location",
-  "Location",
-  "Location",
-  "Location",
-  "Location",
-  "Location",
-  "Location",
-];
-var eventTime = [
-  "Date & Time",
-  "Date & Time",
-  "Date & Time",
-  "Date & Time",
-  "Date & Time",
-  "Date & Time",
-  "Date & Time",
-  "Date & Time",
-  "Date & Time",
-];
+// var eventName = [
+//   "Rolling Down A Hill Tour",
+//   "Flapjacks for Dinner World Tour",
+//   "Summer of 0ur Lyfes Tour",
+//   "Jazz Hands and Snaps Mean Everything Tour",
+//   "Touring at Its Best Tour",
+//   "Dreams Tour",
+//   "Seeing Sounds Tour",
+//   "Dont Tell Ma Tour",
+//   "i wanna be someone Tour",
+//   "Bring back the Snack Wrap Tour",
+// ];
+
+// var eventName1 = [
+//   "You at your best when you're crying World Tour",
+//   "Orges are like Onions , ode to Shrek Tour",
+//   "NOW THATS WHAT I CALL MUSIC 483 LIVE",
+//   "Christmas Came Early Tour",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+// ];
+
+// var eventName2 = [
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+//   "",
+// ];
+
+// var eventLocation = [
+//   "Location",
+//   "Location",
+//   "Location",
+//   "Location",
+//   "Location",
+//   "Location",
+//   "Location",
+//   "Location",
+//   "Location",
+// ];
+// var eventTime = [
+//   "2022-10-01 at 7:00PM",
+//   "Date & Time",
+//   "Date & Time",
+//   "Date & Time",
+//   "Date & Time",
+//   "Date & Time",
+//   "Date & Time",
+//   "Date & Time",
+//   "Date & Time",
+// ];
 
 for (var i = 0; i < imgArray.length; i++) {
   const container1 = document.getElementById("container1");
@@ -198,9 +232,9 @@ for (var i = 0; i < imgArray.length; i++) {
   title1.className = "card-title";
   title2.className = "card-title";
   title3.className = "card-title";
-  title1.textContent = eventName[i];
-//   title1.textContent = eventsForTicketScholars[i].title;
-  title2.textContent = eventName[i];
+  // title1.textContent = eventName[i];
+title1.textContent = '{{title}}';
+  title2.textContent = eventName1[i];
   title3.textContent = eventName[i];
   location1.className = "card-text";
   location2.className = "card-text";
