@@ -86,8 +86,6 @@ Tickets.init(
 
     }
     
-   
-     
   },
 
 
