@@ -65,6 +65,7 @@ Tickets.init(
         model: 'events',
         key: 'location'
       },
+    },
 
     event_id: {
       type: DataTypes.INTEGER,
