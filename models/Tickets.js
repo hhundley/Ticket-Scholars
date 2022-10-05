@@ -47,12 +47,32 @@ Tickets.init(
       },
     },
 
+
+    location: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      references: {
+        model: 'events',
+        key: 'location'
+      }
+
+    },
+
+    city: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      references: {
+        model: 'events',
+        key: 'location'
+      },
+
     event_id: {
       type: DataTypes.INTEGER,
       references: {
         model: "events",
         key: "id",
       },
+
     },
 
     user_id: {
