@@ -21,64 +21,33 @@
 
   <body>
     <header>
-      <div class="container-fluid">
-        <nav class="navbar">
-          <nav class="navbar-nav left">
-            <div class="title">
-              <img
-                src="../../public/images/ticketmaster - 11@2x.png"
-                id="logo"
-                alt="TicketScholar Logo"
-                style="width: 20rem"
-              />
+    <nav class="navbar navbar-expand-md">
+    
+      <a class="navbar-brand logo" href="#">
+        <img src="../../public/images/ticketmaster - 11@2x.png" class="img-fluid" id="logo" alt="TicketScholar Logo" style="width: 20rem;">
+      </a>
+      <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#collapse_nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>      
+      <div class="collapse navbar-collapse" id="collapse_nav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">My Tickets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign In</a>
+        </li>
+        <li class="nav-item">
+          <div class="nav-link">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="darkSwitch">
+              <label class="custom-control-label pl-2" id="label" for="darkSwitch"></label>
             </div>
-          </nav>
-          <nav class="navbar-nav left">
-            <div class="search ml-4 p-2">
-              <i class="fa-solid fa-magnifying-glass fa-2x ml-2 i"></i>
-              <form class="p-0">
-                <input
-                  type="search"
-                  class="ml-3 text-dark"
-                  id="searchBar"
-                  name="searchBar"
-                  placeholder="Artist or City"
-                />
-              </form>
-            </div>
-          </nav>
-          <nav class="navbar-nav anchors">
-            <div class="nav-link">
-              <div>
-                <a href="/views/login.handlebars">My Tickets</a>
-              </div>
-            </div>
-          </nav>
-          <nav class="navbar-nav anchors">
-            <div class="nav-link">
-              <div>
-                <a href="/views/signup.handlebars">Sign In</a>
-              </div>
-            </div>
-          </nav>
-          <nav class="navbar-nav anchors">
-            <div class="nav-link">
-              <div class="custom-control custom-switch">
-                <input
-                  type="checkbox"
-                  class="custom-control-input"
-                  id="darkSwitch"
-                />
-                <label
-                  class="custom-control-label pl-2"
-                  id="label"
-                  for="darkSwitch"
-                ></label>
-              </div>
-            </div>
-          </nav>
-        </nav>
+          </div>                   
+        </li>
+      </ul>        
       </div>
+    </nav>
       <div class="container-fluid">
         <nav class="navbar justify-content-center">
           <nav aria-label="breadcrumb">
@@ -230,19 +199,7 @@
       <div class="col-3 mx-auto text-center text-muted">
         &copy; Ticket Scholars 2022
       </div>
-      <div class="col-3 divColumn">
-        <h5>Have Questions?</h5>
-        <ul>
-          <li><a href="#">Help Center</a></li>
-          <li><a href="#">Ticket Scholar Community</a></li>
-          <li><a href="#">Gift Cards</a></li>
-        </ul>
-      </div>
-      <div class="col-3 divColumn live-events">
-        <h5>Live Events</h5>
-      </div>
-    </div>
-    <div class="col-3 mx-auto text-center text-muted">&copy; Ticket Scholars 2022</div>
+
   </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" 
