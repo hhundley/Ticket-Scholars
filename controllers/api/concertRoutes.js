@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const withAuth = require('../../utils/auth');
-const { Events, User, Tickets } = require('../../models');
+const { Events, User, Tickets, Genres } = require('../../models');
 
 
 // POST for creating a new ticket
@@ -42,4 +42,21 @@ router.put('/:id', (req, res) => {
     });
 });
 
+// Test get route for concerts
+router.get("/", async (req, res) => {
+  try {
+    // retreive concerts and required attributes. Serialize concerts as plain js objects
+     const eventData = await Events.findAll({
+      include: [{model: Genres}],
+     });
 
+res.status(200).json(eventData);
+
+    }
+   catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+// exporting router
+module.exports = router;
