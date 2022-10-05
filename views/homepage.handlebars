@@ -84,9 +84,9 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#popular">Popular</a></li>
-              <li class="breadcrumb-item"><a href="#near">Near Austin</a></li>
               <li class="breadcrumb-item"><a href="#tours">Tours</a></li>
-              <li class="breadcrumb-item"><a href="#concerts">Pop/Rock</a></li>
+              <li class="breadcrumb-item"><a href="#rockPop">Rock/Pop</a></li>
+              <li class="breadcrumb-item"><a href="#country">Country/Bluegrass</a></li>
             </ol>
           </nav>
         </nav>
@@ -100,7 +100,19 @@
           <div class="card col-3 p-0 mr-4">
             <img
               class="card-img-top"
-              src="../public/images/image1.jpg"
+              src="../public/images/image4.jpg"
+              alt="Card img top"
+            />
+            <div class="card-body p-0">
+              <h5 class="card-title">Date & Time</h5>
+              <h5 class="card-title">Jazz Hands and Snaps Mean Everything Tour</h5>
+              <p class="card-text">Location</p>
+            </div>
+          </div>
+          <div class="card col-3 p-0 mr-4">
+            <img
+              class="card-img-top"
+              src="../public/images/pop-image10.jpg"
               alt="Card img top"
             />
             <div class="card-body p-0">
@@ -112,7 +124,7 @@
           <div class="card col-3 p-0 mr-4">
             <img
               class="card-img-top"
-              src="../public/images/pop-image1.jpg"
+              src="../public/images/rock-image10.jpg"
               alt="Card img top"
             />
             <div class="card-body p-0">
@@ -121,30 +133,6 @@
               <p class="card-text">Location</p>
             </div>
           </div>
-          <div class="card col-3 p-0 mr-4">
-            <img
-              class="card-img-top"
-              src="../public/images/rock-image1.jpg"
-              alt="Card img top"
-            />
-            <div class="card-body p-0">
-              <h5 class="card-title">Date & Time</h5>
-              <h5 class="card-title">Name of Band</h5>
-              <p class="card-text">Location</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="near" class="product">
-        <h3 class="product-category">Concerts Near Austin</h3>
-        <button class="pre-btn">
-          <img src="../public/images/arrow.png" alt="" />
-        </button>
-        <button class="nxt-btn">
-          <img src="../public/images/arrow.png" alt="" />
-        </button>
-        <div id="container1" class="product-container">
-          <!-- cards with be created from javascript and placed here-->
         </div>
       </div>
       <div id="tours" class="product">
@@ -155,12 +143,32 @@
         <button class="nxt-btn">
           <img src="../public/images/arrow.png" alt="" />
         </button>
-        <div id="container2" class="product-container">
+        <div id="container1" class="product-container">
           <!-- cards with be created from javascript and placed here-->
+          {{#each events as |event| }}
+            {{> events}}
+          {{/each}}
+
         </div>
       </div>
-      <div id="concerts" class="product">
-        <h3 class="product-category">Pop/Rock Concerts</h3>
+      <div id="rockPop" class="product">
+        <h3 class="product-category">Rock/Pop Concerts</h3>
+        <button class="pre-btn">
+          <img src="../public/images/arrow.png" alt="" />
+        </button>
+        <button class="nxt-btn">
+          <img src="../public/images/arrow.png" alt="" />
+        </button>
+        <div id="container2" class="product-container">
+          <!-- cards with be created from javascript and placed here-->
+          {{#each events as |event| }}
+            {{> events}}
+          {{/each}}
+
+        </div>
+      </div>
+      <div id="country" class="product">
+        <h3 class="product-category">Country/Bluegrass Concerts</h3>
         <button class="pre-btn">
           <img src="../public/images/arrow.png" alt="" />
         </button>
@@ -169,6 +177,10 @@
         </button>
         <div id="container3" class="product-container">
           <!-- cards with be created from javascript and placed here-->
+          {{#each events as |event| }}
+            {{> events}}
+          {{/each}}
+
         </div>
       </div>
       <section class="newsLetter">
@@ -253,6 +265,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="../public/scripts/dark-mode-switch.js"></script>
-    <script src="../public/js/homefunction.js"></script>
+    <script src="../public/scripts/homefunction.js"></script>
   </body>
 </html>
