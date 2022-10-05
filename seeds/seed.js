@@ -146,7 +146,119 @@ const eventsForTicketScholars = [
         "description": "ticket to the Christmas Early tour",
         "total_tickets": '325',
         "website_link" : "../../public/images/pop-image4.jpg"
+    },
+
+    {
+        "title": "Coding Makes The World Go Round",
+        "artist": "CodeG",
+        "show_date": "2022-11-13",
+        "show_time": "6:00PM",
+        "description": "ticket to the Coding  tour",
+        "total_tickets": '1337',
+        "website_link" : "../../public/images/pop-image4.jpg"
+    },
+
+    {
+        "title": "Why is Bologna spelled Bologna",
+        "artist": "Deli Cut Cutters",
+        "show_date": "2022-12-13",
+        "show_time": "7:00PM",
+        "description": "ticket to the Deli tour",
+        "total_tickets": '411',
+        "website_link" : "../../public/images/pop-image5.jpg"
+    },
+
+    {
+        "title": "Duolingo speak easy tour",
+        "artist": "big green bird",
+        "show_date": "2023-1-25",
+        "show_time": "8:00PM",
+        "description": "ticket to the duolingo tour",
+        "total_tickets": '355525',
+        "website_link" : "../../public/images/pop-image6.jpg"
+    },
+
+    {
+        "title": "Coffee with You tour",
+        "artist": "Mr.Coffee",
+        "show_date": "2023-1-20",
+        "show_time": "7:00PM",
+        "description": "ticket to the Coffee tour",
+        "total_tickets": '505',
+        "website_link" : "../../public/images/pop-image7.jpg"
+    },
+
+    {
+        "title": "Fried Sushi is Better World Tour",
+        "artist": "Sumo boys",
+        "show_date": "2023-03-14",
+        "show_time": "8:00PM",
+        "description": "ticket to the Fried Sushi tour",
+        "total_tickets": '745',
+        "website_link" : "../../public/images/pop-image8.jpg"
+    },
+
+    {
+        "title": "Dont Get Mad, Get Glad Tour",
+        "artist": "Betty Crocker",
+        "show_date": "2023-04-01",
+        "show_time": "7:00PM",
+        "description": "ticket to the Get Glad tour",
+        "total_tickets": '161',
+        "website_link" : "../../public/images/pop-image9.jpg"
+    },
+
+    {
+        "title": "Wish you were here tour",
+        "artist": "Randoms in Chat",
+        "show_date": "2023-05-04",
+        "show_time": "6:00PM",
+        "description": "ticket to the wish you were here tour",
+        "total_tickets": '325',
+        "website_link" : "../../public/images/pop-image10.jpg"
+    },
+
+    {
+        "title": "Tell me why tour",
+        "artist": "Never",
+        "show_date": "2022-11-25",
+        "show_time": "7:30PM",
+        "description": "ticket to tell me why tour",
+        "total_tickets": '325',
+        "website_link" : "../../public/images/rock-image1.jpg"
+    },
+
+    {
+        "title": "Aint nothing but a Heartache tour",
+        "artist": "Give You Up",
+        "show_date": "2022-11-26",
+        "show_time": "7:31PM",
+        "description": "ticket to aint nothing but a heartache tour",
+        "total_tickets": '325',
+        "website_link" : "../../public/images/rock-image2.jpg"
+    },
+
+    {
+        "title": "1000 miles is a lot to walk tour",
+        "artist": "Piano Player with alot of Time",
+        "show_date": "2022-12-01",
+        "show_time": "7:45PM",
+        "description": "ticket to 1000 miles",
+        "total_tickets": '625',
+        "website_link" : "../../public/images/rock-image3.jpg"
+    },
+
+    {
+        "title": "Biscuits and Gravy",
+        "artist": "Sizzling Griddle",
+        "show_date": "2022-11-27",
+        "show_time": "7:30PM",
+        "description": "ticket to Biscuits and Gravy tour",
+        "total_tickets": '425',
+        "website_link" : "../../public/images/rock-image4.jpg"
     }
+
+
 ]
 
 
