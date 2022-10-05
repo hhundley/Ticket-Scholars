@@ -262,3 +262,6 @@ title1.textContent = '{{title}}';
   information2.append(time2, title2, location2);
   information3.append(time3, title3, location3);
 }
+
+
+
