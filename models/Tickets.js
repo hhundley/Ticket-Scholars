@@ -38,7 +38,7 @@ Tickets.init(
 
     },
 
-     events_name: {
+    events_name: {
       type: DataTypes.STRING,
       allowNull: false,
       references: {
@@ -46,6 +46,17 @@ Tickets.init(
         key: 'title',
       },
     },
+
+    user_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'User',
+        key: 'id',
+      },
+
+    }
+    
    
      
   },

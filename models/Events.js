@@ -31,6 +31,14 @@ Events.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    location: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    city: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     genres_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -38,6 +46,15 @@ Events.init(
         key: 'id',
       },
     },
+    total_tickets:{
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    website_link:{
+      type: DataTypes.STRING,
+      allowNull: false,
+    }
+   
   },
   {
     sequelize,
