@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Events, Genres, User } = require("../models");
+const { Events, Genres, User, Tickets } = require("../models");
 const withAuth = require("../utils/auth");
 
 router.get("/", async (req, res) => {
@@ -22,22 +22,19 @@ router.get("/", async (req, res) => {
 });
 
 // Require user to be logged in to access the profile page
-router.get("/profile", withAuth, async (req, res) => {
+router.get('/profile', withAuth, async (req, res) => {
   try {
-    // Find user based w/ session id
+    // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ["password"] },
-      include: [{ model: Events}],
+      attributes: { exclude: ['password'] },
+      include: [{ model: Tickets, include: [Events] } ],
     });
 
-    // serialize user data
     const user = userData.get({ plain: true });
 
-    // Todo: update route with where clause to only display events the user has purchased a ticket too
-    // render user data on profile page
-    res.render("profile", {
+    res.render('profile', {
       ...user,
-      logged_in: true,
+      logged_in: true
     });
   } catch (err) {
     res.status(500).json(err);
