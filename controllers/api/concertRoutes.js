@@ -1,30 +1,29 @@
 const router = require('express').Router();
 const withAuth = require('../../utils/auth');
-const { Events, User } = require('../../models');
+const { Events, User, Tickets } = require('../../models');
 
-// POST route for saved events
+
+// POST for creating a new ticket
 router.post('/', withAuth, async (req, res) => {
-    try {
-    //   add booked events to model for those booked events. Needs to include user
-    const savedEvent = await Events.findAll({
-      where: {
-        user_id: req.session.user_id,
-      }
+  try {
+    const newTicket = await Tickets.create({
+      user_id: req.session.user_id,
+      event_id: req.params.event_id,
     });
 
-    res.status(200).json(savedEvent);
+    res.status(200).json(newTicket);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
 
-    } catch (err) {
-      res.status(400).json(err);
-    }
-  });
 // Update ticket count (subtract)
 // Todo: figure out increments and update attribute name
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
   Events.update(
     {
-      tickets_remaining: req.params.tickets_remaining -1,
+      total_tickets: req.params.tickets_remaining -1,
     },
     {
       where: {id: req.params.id},

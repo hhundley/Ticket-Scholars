@@ -47,6 +47,14 @@ Tickets.init(
       },
     },
 
+    event_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: "events",
+        key: "id",
+      },
+    },
+
     user_id: {
       type: DataTypes.INTEGER,
       allowNull: false,

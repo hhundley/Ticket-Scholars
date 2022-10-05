@@ -11,8 +11,20 @@ Events.belongsTo(Genres, {
   foreignKey: 'genres_id',
 });
 
-Events.hasMany(Tickets, {
-  foreignKey: 'events_id',
+Tickets.belongsTo(Events, {
+  foreignKey: 'event_id',
 });
+
+Tickets.belongsTo(User, {
+  foreignKey: 'user_id',
+});
+
+User.hasMany(Tickets,{
+  foreignKey: 'user_id',
+})
+
+Events.hasMany(Tickets,{
+  foreignKey: 'event_id',
+})
 
 module.exports = { User, Genres, Events, Tickets };
