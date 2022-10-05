@@ -119,7 +119,7 @@ const eventsForTicketScholars = [
     },
 
     {
-        "title": "Orges are like Onions , ode to Shrek Tour",
+        "title": "Orges are like Onions, ode to Shrek Tour",
         "artist": "Swamps Stars",
         "show_date": "2022-10-19",
         "show_time": "8:00PM",
@@ -256,6 +256,66 @@ const eventsForTicketScholars = [
         "description": "ticket to Biscuits and Gravy tour",
         "total_tickets": '425',
         "website_link" : "../../public/images/rock-image4.jpg"
+    },
+
+    {
+        "title": "Really Running Out of Ideas",
+        "artist": "Insert Band Name Here",
+        "show_date": "2023-11-27",
+        "show_time": "6:30PM",
+        "description": "ticket to Running out of ideas tour",
+        "total_tickets": '10',
+        "website_link" : "../../public/images/rock-image5.jpg"
+    },
+
+    {
+        "title": "Beach Party Vibing Tour",
+        "artist": "Beaching Good Time",
+        "show_date": "2022-04-17",
+        "show_time": "8:30PM",
+        "description": "ticket to Beach Party tour",
+        "total_tickets": '550',
+        "website_link" : "../../public/images/rock-image6.jpg"
+    },
+
+    {
+        "title": "Green Pasters are where you water tour",
+        "artist": "Water Can Sunday",
+        "show_date": "2023-5-27",
+        "show_time": "7:30PM",
+        "description": "ticket to green pasters tour",
+        "total_tickets": '85',
+        "website_link" : "../../public/images/rock-image7.jpg"
+    },
+
+    {
+        "title": "Mulching is really a bad time world tour",
+        "artist": "GreenThumb",
+        "show_date": "2023-3-27",
+        "show_time": "8:30PM",
+        "description": "ticket to Mulching tour",
+        "total_tickets": '825',
+        "website_link" : "../../public/images/rock-image8.jpg"
+    },
+
+    {
+        "title": "Do a Kickflip Tour",
+        "artist": "Skateboard Pete",
+        "show_date": "2023-04-27",
+        "show_time": "6:45PM",
+        "description": "ticket to do a kickflip tour",
+        "total_tickets": '425',
+        "website_link" : "../../public/images/rock-image9.jpg"
+    },
+
+    {
+        "title": "Total MayHam World Tour",
+        "artist": "Peppa the Teenage Pig",
+        "show_date": "2023-1-27",
+        "show_time": "7:20PM",
+        "description": "ticket to MAYHAM tour",
+        "total_tickets": '425',
+        "website_link" : "../../public/images/rock-image10.jpg"
     }
 
 
