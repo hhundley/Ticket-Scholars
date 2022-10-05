@@ -145,19 +145,9 @@
         </button>
         <div id="container1" class="product-container">
           <!-- cards with be created from javascript and placed here-->
-          {{#each Events as |event| }}
-<div class="row align-center mb-5">
-<div class="product-card"> 
-                <div class="product-image"> 
-                    <img src="{{event.website_link}}" class="product-thumb" alt="">
-                    <button class="card-btn">Add Ticket</button>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-Ticket">{{event.title}}</h2>
-                    <p class="product-short-description">{{event.description}}</p>
-                </div>
-            </div>
-{{/each}}
+          {{#each events as |event| }}
+            {{> events}}
+          {{/each}}
 
         </div>
       </div>
@@ -171,19 +161,10 @@
         </button>
         <div id="container2" class="product-container">
           <!-- cards with be created from javascript and placed here-->
-                    {{#each users as |user| }}
-<div class="row align-center mb-5">
-<div class="product-card"> 
-                <div class="product-image"> 
-                    <img src="{{user.painting.filename}}" class="product-thumb" alt="">
-                    <button class="card-btn">Add Ticket</button>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-Ticket">{{user.title}}</h2>
-                    <p class="product-short-description">{{user.description}}</p>
-                </div>
-            </div>
-{{/each}}
+          {{#each events as |event| }}
+            {{> events}}
+          {{/each}}
+
         </div>
       </div>
       <div id="country" class="product">
@@ -196,19 +177,10 @@
         </button>
         <div id="container3" class="product-container">
           <!-- cards with be created from javascript and placed here-->
-                    {{#each users as |user| }}
-<div class="row align-center mb-5">
-<div class="product-card"> 
-                <div class="product-image"> 
-                    <img src="{{user.painting.filename}}" class="product-thumb" alt="">
-                    <button class="card-btn">Add Ticket</button>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-Ticket">{{user.title}}</h2>
-                    <p class="product-short-description">{{user.description}}</p>
-                </div>
-            </div>
-{{/each}}
+          {{#each events as |event| }}
+            {{> events}}
+          {{/each}}
+
         </div>
       </div>
       <section class="newsLetter">

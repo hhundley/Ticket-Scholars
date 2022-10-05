@@ -1,41 +1,46 @@
 const router = require('express').Router();
 const withAuth = require('../../utils/auth');
-const { Events, User, SavedTickets, Tickets } = require('../../models');
+const { Events, User } = require('../../models');
 
 // POST route for saved events
 router.post('/', withAuth, async (req, res) => {
     try {
     //   add booked events to model for those booked events. Needs to include user
-    const newTicket = await savedTickets.create({
-      ...req.body,
-      user_id: req.session.user_id,
+    const savedEvent = await Events.findAll({
+      where: {
+        user_id: req.session.user_id,
+      }
     });
 
-    res.status(200).json(newTicket);
+    res.status(200).json(savedEvent);
 
     } catch (err) {
       res.status(400).json(err);
     }
   });
-// DELETE route for saved events
-router.delete('/:id', withAuth, async (req, res) => {
-  try {
-//    delete specific booked event from an saved events model once it's ready. 
-      const newTicket = await savedTickets.destroy({
-        where: {
-          id: req.params.id,
-          user_id: req.session.user_id,
-        },
-      });
-          if (!savedTicket) {
-      res.status(404).json({ message: 'Ticket not found in your saved ticekts' });
-      return;
+// Update ticket count (subtract)
+// Todo: figure out increments and update attribute name
+router.put('/:id', (req, res) => {
+  // update a category by its `id` value
+  Events.update(
+    {
+      tickets_remaining: req.params.tickets_remaining -1,
+    },
+    {
+      where: {id: req.params.id},
     }
-
-    res.status(200).json(savedTickets);
-  } catch (err) {
-    res.status(500).json(err);
-  }
+  )
+    .then((eventData) => {
+      if (!eventData) {
+        res.status(404).json({ message: "Event not found." });
+        return;
+      }
+      res.status(200).json(eventData);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 

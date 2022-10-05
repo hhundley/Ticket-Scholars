@@ -13,7 +13,9 @@ const eventsForTicketScholars = [
         "artist": "Lumberjack Loggers",
         "show_date": "2022-10-01",
         "show_time": "7:00PM",
-        "description": "Ticket to Rolling Down a Hill Tour"
+        "description": "Ticket to Rolling Down a Hill Tour",
+        "total_tickets": '45',
+        "website_link" : "../../public/images/image1.jpg"
     },
 
     {
@@ -21,7 +23,9 @@ const eventsForTicketScholars = [
         "artist": "Bacon Pancakes",
         "show_date": "2022-10-02",
         "show_time": "8:00PM",
-        "description": "Ticket to Flapjacks for Dinner World Tour"
+        "description": "Ticket to Flapjacks for Dinner World Tour",
+        "total_tickets": '49',
+        "website_link" : "../../public/images/image2.jpg"
     },
 
     {
@@ -29,7 +33,9 @@ const eventsForTicketScholars = [
         "artist": "BRRRRRR",
         "show_date": "2022-10-03",
         "show_time": "6:00PM",
-        "description": "Tickets for the Summer of 0ur Lyfes Tour"
+        "description": "Tickets for the Summer of 0ur Lyfes Tour",
+        "total_tickets": '151',
+        "website_link" : "../../public/images/image3.jpg"
     },
 
     {
@@ -37,7 +43,9 @@ const eventsForTicketScholars = [
         "artist": "sad court jester",
         "show_date": "2022-10-04",
         "show_time": "7:00PM",
-        "description": "ticket to Jazz Hands Tour"
+        "description": "ticket to Jazz Hands Tour",
+        "total_tickets": '78',
+        "website_link" : "../../public/images/image4.jpg"
     },
 
     {
@@ -45,7 +53,9 @@ const eventsForTicketScholars = [
         "artist": "Da-tours",
         "show_date": "2022-10-05",
         "show_time": "6:00PM",
-        "description": "ticket to the touring tour"
+        "description": "ticket to the touring tour",
+        "total_tickets": '54',
+        "website_link" : "../../public/images/image5.jpg"
     },
 
     {
@@ -53,7 +63,9 @@ const eventsForTicketScholars = [
         "artist": "Pray",
         "show_date": "2022-10-09",
         "show_time": "8:00PM",
-        "description": "ticket to the dream tour"
+        "description": "ticket to the dream tour",
+        "total_tickets": '88',
+        "website_link" : "../../public/images/image6.jpg"
     },
 
     {
@@ -61,7 +73,9 @@ const eventsForTicketScholars = [
         "artist": "Smores",
         "show_date": "2022-10-11",
         "show_time": "7:00PM",
-        "description": "ticket to the seeing sounds tour"
+        "description": "ticket to the seeing sounds tour",
+        "total_tickets": '99',
+        "website_link" : "../../public/images/image7.jpg"
     },
 
     {
@@ -69,7 +83,9 @@ const eventsForTicketScholars = [
         "artist": "Dads on Strike",
         "show_date": "2022-10-11",
         "show_time": "6:00PM",
-        "description": "ticket to the Dont Tell Ma tour"
+        "description": "ticket to the Dont Tell Ma tour",
+        "total_tickets": '223',
+        "website_link" : "../../public/images/image8.jpg"
     },
 
     {
@@ -77,7 +93,9 @@ const eventsForTicketScholars = [
         "artist": "Nobody",
         "show_date": "2022-10-25",
         "show_time": "7:00PM",
-        "description": "ticket to the i wanna be someone tour"
+        "description": "ticket to the i wanna be someone tour",
+        "total_tickets": '164',
+        "website_link" : "../../public/images/image9.jpg"
     },
 
     {
@@ -85,15 +103,19 @@ const eventsForTicketScholars = [
         "artist": "Mc-lifer",
         "show_date": "2022-10-05",
         "show_time": "6:00PM",
-        "description": "ticket to the Snack Wrap tour"
+        "description": "ticket to the Snack Wrap tour",
+        "total_tickets": '745',
+        "website_link" : "../../public/images/image10.jpg"
     },
 
     {
-        "title": "You at your best when you're crying World Tour",
+        "title": "You are at your best when you're crying World Tour",
         "artist": "Grumpy Cat Lives",
         "show_date": "2022-10-23",
         "show_time": "7:00PM",
-        "description": "ticket to the crying world tour"
+        "description": "ticket to the crying world tour",
+        "total_tickets": '888',
+        "website_link" : "../../public/images/pop-image1.jpg"
     },
 
     {
@@ -101,7 +123,9 @@ const eventsForTicketScholars = [
         "artist": "Swamps Stars",
         "show_date": "2022-10-19",
         "show_time": "8:00PM",
-        "description": "ticket to the Onion tour"
+        "description": "ticket to the Onion tour",
+        "total_tickets": '8',
+        "website_link" : "../../public/images/pop-image2.jpg"
     },
 
     {
@@ -109,7 +133,9 @@ const eventsForTicketScholars = [
         "artist": "Untitled Artists",
         "show_date": "2022-10-20",
         "show_time": "6:00PM",
-        "description": "ticket to the touring tour"
+        "description": "ticket to the NOW tour",
+        "total_tickets": '454',
+        "website_link" : "../../public/images/pop-image3.jpg"
     },
 
     {
@@ -117,7 +143,9 @@ const eventsForTicketScholars = [
         "artist": "Sir Kringle",
         "show_date": "2022-10-25",
         "show_time": "7:00PM",
-        "description": "ticket to the Christmas Early tour"
+        "description": "ticket to the Christmas Early tour",
+        "total_tickets": '325',
+        "website_link" : "../../public/images/pop-image4.jpg"
     }
 ]
 

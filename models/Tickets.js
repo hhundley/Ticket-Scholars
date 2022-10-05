@@ -17,7 +17,7 @@ Tickets.init(
       allowNull: false,
       references: {
         model: 'events',
-        key: 'id',
+        key: 'artist',
       }
     },
     date: {
@@ -25,42 +25,43 @@ Tickets.init(
       allowNull: false,
       references: {
         model: 'events',
-        key: 'id',
+        key: 'show_date',
       }
     },
-    location: {
+    event_time: {
       type: DataTypes.STRING,
       allowNull: false,
       references: {
         model: 'events',
-        key: 'id',
+        key: 'show_time',
       }
+
     },
-    city: {
+
+    events_name: {
       type: DataTypes.STRING,
       allowNull: false,
       references: {
         model: 'events',
-        key: 'id',
-      }
+        key: 'title',
+      },
     },
-    events_id: {
+
+    user_id: {
       type: DataTypes.INTEGER,
+      allowNull: false,
       references: {
-        model: 'events',
+        model: 'User',
         key: 'id',
       },
-    },
-    row: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        },
-    section: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        },
-      },
+
+    }
+    
+   
+     
   },
+
+
   {
     sequelize,
     freezeTableName: true,
