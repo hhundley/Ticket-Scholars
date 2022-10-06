@@ -23,7 +23,7 @@ function viewTickets() {
   const location = document.getElementById("event_location").innerHTML;
   // Send a post route to api
   if (time && event_Name && email) {
-    const response = fetch("/api/concerts", {
+    const response = fetch(`/api/concerts`, {
       method: "POST",
       body: JSON.stringify({image, time, event_Name, description, location}),
       headers: { "Content-Type": "application/json" },
