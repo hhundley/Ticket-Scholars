@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Ticket Scholar</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" 
+          crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:light,extralight,thin,regular,bold,semibold,medium,extrabold,black&display=swap">
+    <link href="../../public/styles/dark-mode.css" rel="stylesheet"/>
+    <link href="../../public/styles/viewTickets.css" rel="stylesheet"/>
+
+    <script src="https://kit.fontawesome.com/f4975ee129.js" 
+            crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm">
+    
+      <a class="navbar-brand logo" href="#">
+        <img src="../../public/images/ticketmaster - 11@2x.png" class="img-fluid" id="logo" alt="TicketScholar Logo" style="width: 20rem;">
+      </a>
+      <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#collapse_nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>      
+      <div class="collapse navbar-collapse" id="collapse_nav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">My Tickets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign In</a>
+        </li>
+        <li class="nav-item">
+          <div class="nav-link">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="darkSwitch">
+              <label class="custom-control-label pl-2" id="label" for="darkSwitch"></label>
+            </div>
+          </div>                   
+        </li>
+      </ul>        
+      </div>
+    </nav>
+  </header>
+  <main class="bg-light">
+    <div class="wrapper">
+        <!--Sidebar-->
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <h3>Firstname Lastname</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+          <li class="active">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Orders</a>
+          </li>
+          <li>
+            <a href="#">Listings</a>
+          </li>
+          <li>
+            <a href="#">Sales</a>
+          </li>
+          <li>
+            <a href="#">Settings</a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <!--Page Content-->
+      <div id="content">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+    
+                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                    <i class="fas fa-align-left"></i>
+                    <span></span>
+                </button>
+    
+            </div>
+        </nav>
+
+        <div class="title">
+          <h1>Profile</h1>
+        </div>
+
+        <div class="section">
+          <h6>WHAT'S NEXT</h6>
+          <hr style="border: 1px solid grey">
+          <p>You don't have any upcoming events scheduled right now.</p>
+        </div>
+        <div class="section">
+          <h6>Listings</h6>
+          <hr style="border: 1px solid grey">
+          <div class="display-tickets">
+            <div class="card ticket-info-card">
+                <img class="card-img-top img-fluid" src="../../public/images/image1.jpg" alt="Event image">
+                  <div class="card-body">
+                    <h5 class="card-title">Event Name | Event Date</h5>
+                    <div class="card-text">Location | Event Time</div>
+                  </div>
+            </div>
+            <div class="card ticket-info-card">
+                <img class="card-img-top img-fluid" src="../../public/images/image1.jpg" alt="Event image">
+                  <div class="card-body">
+                    <h5 class="card-title">Event Name | Event Date</h5>
+                    <div class="card-text">Location | Event Time</div>
+                  </div>
+            </div>
+            <div class="card ticket-info-card">
+                <img class="card-img-top img-fluid" src="../../public/images/image1.jpg" alt="Event image">
+                  <div class="card-body">
+                    <h5 class="card-title">Event Name | Event Date</h5>
+                    <div class="card-text">Location | Event Time</div>
+                  </div>
+            </div>
+            <div class="card ticket-info-card">
+                <img class="card-img-top img-fluid" src="../../public/images/image1.jpg" alt="Event image">
+                  <div class="card-body">
+                    <h5 class="card-title">Event Name | Event Date</h5>
+                    <div class="card-text">Location | Event Time</div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="break">
+            <div class="section half">
+            <h6>Sales</h6>
+            <hr style="border: 1px solid grey">
+            <p>You don't have any sales right now.</p>
+            </div>
+            <div class="section half">
+            <h6>Payments</h6>
+            <hr style="border: 1px solid grey">
+            <a href="#">View payments statuses</a>
+            </div>            
+        </div>
+        <div class="section fx10affrw">
+          <div>
+            <div class="left">
+              Contact Info
+            </div>
+            <div class="right">
+              <a href="#">Edit contact Info</a>
+              <span class="divide"></span>
+              <a href="#">Edit Address</a>
+              <span class="divide"></span>
+              <a href="#">Change Password</a>
+            </div>
+          </div>
+          <br>
+          <hr class="hr">
+          <div class="user-info">
+          <div class="user-name">
+            Firstname Lastname
+          </div>
+          <div class="user-details">
+            <div class="phone-email">
+              <div>+1 8299341203</div>
+              <div>user-email@email.com</div>
+            </div>
+          </div>
+          </div>
+        </div>      
+      </div>
+    </div>
+  </main>
+</body>   
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" 
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" 
+            crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" 
+            integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" 
+            crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" 
+            integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script src="../../public/scripts/dark-mode-switch.js"></script>
+    <script src="../../public/scripts/sideBar.js"></script>
+
+</html>
