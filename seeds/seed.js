@@ -3,6 +3,7 @@
 const { application } = require('express')
 const sequelize = require('../config/connection')
 const db = require('../config/connection')
+const {User} = require('../models')
 const Events = require('../models/Events')
 const Genres = require('../models/Genres')
 
@@ -445,10 +446,20 @@ const genreForTicketScholars = [
 
 ]
 
+const seedUsers = [
+    {
+        first_name: "Test",
+        last_name: "User",
+        email: "test@email.com",
+        password: "password"
+    }
+]
+
 const seed = async () => {
     await sequelize.sync({force: true});
 
     await Genres.bulkCreate(genreForTicketScholars);
+    await User.bulkCreate(seedUsers);
     for (const event of eventsForTicketScholars) {
         await Events.create({
           ...event,
