@@ -1,7 +1,7 @@
 # **Ticket Scholars**
 
 ## *Deployed Application:*
-- [Ticket Scholars]()
+- [Ticket Scholars](https://whispering-cove-28179.herokuapp.com/)
 #
 <!-- welcoming statement/description -->
 #
