@@ -16,8 +16,28 @@ productContainers.forEach((item, i) => {
 });
 
 function viewTickets() {
-  location.href = 'login';
-}
+  const image = document.getElementById("event_image").src;
+  const time = document.getElementById("event_time").innerHTML;
+  const event_Name = document.getElementById("event_title").innerHTML;
+  const description = document.getElementById("event_description").innerHTML;
+  const location = document.getElementById("event_location").innerHTML;
+  // Send a post route to api
+  if (time && event_Name && email) {
+    const response = fetch("/api/concerts", {
+      method: "POST",
+      body: JSON.stringify({image, time, event_Name, description, location}),
+      headers: { "Content-Type": "application/json" },
+    });
+    // redirect to profilePage if successful
+    if (response.ok) {
+      document.location.replace("/profile");
+    } else {
+      alert(response.statusText);
+    }
+  }
+};
+  
+
 
 const ticketcart1 = document.getElementById("1");
 
