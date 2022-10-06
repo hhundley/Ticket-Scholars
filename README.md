@@ -4,7 +4,8 @@
 - [Ticket Scholars]()
 #
 <!-- welcoming statement/description -->
-#
+### *Project Deck*
+- [Ticket Scholar Pitch](https://docs.google.com/presentation/d/1Jut-21WCsks4D3hqGaFFnOwwrl4F_yYBuBbU9C6SStQ/edit?usp=sharing)
 
 ### *User Story:*
 
