@@ -79,9 +79,17 @@
         </div>
 
         <div class="section">
-          <h6>WHAT'S NEXT</h6>
+          <h6>COMING UP</h6>
           <hr style="border: 1px solid grey">
+          {{#if tickets.length}}
+          <div class="display-tickets">
+            {{#each tickets as |ticket|}}
+            {{> tickets}}
+            {{/each}}
+          </div>
+          {{else}}
           <p>You don't have any upcoming events scheduled right now.</p>
+          {{/if}}
         </div>
         <div class="section">
           <h6>Listings</h6>
@@ -117,12 +125,12 @@
           <hr class="hr">
           <div class="user-info">
           <div class="user-name">
-            Firstname Lastname
+            {{user.first_name}} {{user.last_name}}
           </div>
           <div class="user-details">
             <div class="phone-email">
               <div>+1 8299341203</div>
-              <div>user-email@email.com</div>
+              <div>test.email@memes.com</div>
             </div>
           </div>
           </div>

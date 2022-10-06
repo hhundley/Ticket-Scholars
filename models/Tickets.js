@@ -20,6 +20,7 @@ Tickets.init(
         key: 'artist',
       }
     },
+
     date: {
       type: DataTypes.DATE,
       allowNull: false,
@@ -28,6 +29,7 @@ Tickets.init(
         key: 'show_date',
       }
     },
+
     event_time: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -35,7 +37,6 @@ Tickets.init(
         model: 'events',
         key: 'show_time',
       }
-
     },
 
     events_name: {
@@ -55,7 +56,6 @@ Tickets.init(
         model: 'events',
         key: 'location'
       }
-
     },
 
     city: {
@@ -73,7 +73,6 @@ Tickets.init(
         model: "events",
         key: "id",
       },
-
     },
 
     user_id: {
@@ -83,7 +82,6 @@ Tickets.init(
         model: 'user',
         key: 'id',
       },
-
     }
     
   },
