@@ -15,6 +15,137 @@ productContainers.forEach((item, i) => {
   });
 });
 
+function viewTickets() {
+  location.href = 'viewTickets.handlebars';
+}
+
+const ticketcart1 = document.getElementById("1");
+
+ticketcart1.addEventListener("click", viewTickets);
+
+const ticketcart2 = document.getElementById("2");
+
+ticketcart2.addEventListener("click", viewTickets);
+
+const ticketcart3 = document.getElementById("3");
+
+ticketcart3.addEventListener("click", viewTickets);
+
+const ticketcart4 = document.getElementById("4");
+
+ticketcart4.addEventListener("click", viewTickets);
+
+const ticketcart5 = document.getElementById("5");
+
+ticketcart5.addEventListener("click", viewTickets);
+
+const ticketcart6 = document.getElementById("6");
+
+ticketcart6.addEventListener("click", viewTickets);
+
+const ticketcart7 = document.getElementById("7");
+
+ticketcart7.addEventListener("click", viewTickets);
+
+const ticketcart8 = document.getElementById("8");
+
+ticketcart8.addEventListener("click", viewTickets);
+
+const ticketcart9 = document.getElementById("9");
+
+ticketcart9.addEventListener("click", viewTickets);
+
+const ticketcart10 = document.getElementById("10");
+
+ticketcart10.addEventListener("click", viewTickets);
+
+const ticketcart11 = document.getElementById("11");
+
+ticketcart11.addEventListener("click", viewTickets);
+
+const ticketcart12 = document.getElementById("12");
+
+ticketcart12.addEventListener("click", viewTickets);
+
+const ticketcart13 = document.getElementById("13");
+
+ticketcart13.addEventListener("click", viewTickets);
+
+const ticketcart14 = document.getElementById("14");
+
+ticketcart14.addEventListener("click", viewTickets);
+
+const ticketcart15 = document.getElementById("15");
+
+ticketcart15.addEventListener("click", viewTickets);
+
+const ticketcart16 = document.getElementById("16");
+
+ticketcart16.addEventListener("click", viewTickets);
+
+const ticketcart17 = document.getElementById("17");
+
+ticketcart17.addEventListener("click", viewTickets);
+
+const ticketcart18 = document.getElementById("18");
+
+ticketcart18.addEventListener("click", viewTickets);
+
+const ticketcart19 = document.getElementById("19");
+
+ticketcart19.addEventListener("click", viewTickets);
+
+const ticketcart20 = document.getElementById("20");
+
+ticketcart20.addEventListener("click", viewTickets);
+
+const ticketcart21 = document.getElementById("21");
+
+ticketcart21.addEventListener("click", viewTickets);
+
+const ticketcart22 = document.getElementById("22");
+
+ticketcart22.addEventListener("click", viewTickets);
+
+const ticketcart23 = document.getElementById("23");
+
+ticketcart23.addEventListener("click", viewTickets);
+
+const ticketcart24 = document.getElementById("24");
+
+ticketcart24.addEventListener("click", viewTickets);
+
+const ticketcart25 = document.getElementById("25");
+
+ticketcart25.addEventListener("click", viewTickets);
+
+const ticketcart26 = document.getElementById("26");
+
+ticketcart26.addEventListener("click", viewTickets);
+
+const ticketcart27 = document.getElementById("27");
+
+ticketcart27.addEventListener("click", viewTickets);
+
+const ticketcart28 = document.getElementById("28");
+
+ticketcart28.addEventListener("click", viewTickets) ;
+
+const ticketcart29 = document.getElementById("29");
+
+ticketcart29.addEventListener("click", viewTickets); 
+
+const ticketcart30 = document.getElementById("30");
+
+ticketcart30.addEventListener("click", viewTickets);
+
+
+const firstTenImages = eventsForTicketScholars.splice(10, 31);
+const secondTenImages = eventsForTicketScholars.splice(0, 21);
+const thirdTenImages = eventsForTicketScholars.splice(0, 10);
+
+// code below is for Plan B
+
 // const ticketcart = [...document.querySelectorAll(".card-btn")];
 
 // ticketcart.addEventListener("click", () => {
