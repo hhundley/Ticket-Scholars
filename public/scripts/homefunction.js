@@ -16,7 +16,7 @@ productContainers.forEach((item, i) => {
 });
 
 function viewTickets() {
-  location.href = 'viewTickets.handlebars';
+  location.href = 'login';
 }
 
 const ticketcart1 = document.getElementById("1");
@@ -363,10 +363,9 @@ ticketcart30.addEventListener("click", viewTickets);
 //   title1.className = "card-title";
 //   title2.className = "card-title";
 //   title3.className = "card-title";
-//   // title1.textContent = eventName[i];
-// title1.textContent = '{{title}}';
+//   title1.textContent = eventName[i];
 //   title2.textContent = eventName1[i];
-//   title3.textContent = eventName[i];
+//   title3.textContent = eventName2[i];
 //   location1.className = "card-text";
 //   location2.className = "card-text";
 //   location3.className = "card-text";
