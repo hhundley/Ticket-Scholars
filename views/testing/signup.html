@@ -60,11 +60,11 @@
     <form id="sign-up" class="needs-validation" novalidate>
     <div class="form-row">
         <div class="col-md-4 mb-3">
-        <label for="validationCustom01">First name</label>
+        <label for="#firstname-signup">First name</label>
         <input
             type="text"
             class="form-control"
-            id="validationCustom01"
+            id="#firstname-signup"
             required
         />
         <div class="valid-feedback">
@@ -72,11 +72,11 @@
         </div>
         </div>
         <div class="col-md-4 mb-3">
-        <label for="validationCustom02">Last name</label>
+        <label for="#lastname-signup">Last name</label>
         <input
             type="text"
             class="form-control"
-            id="validationCustom02"
+            id="#lastname-signup"
             required
         />
         <div class="valid-feedback">
@@ -84,23 +84,42 @@
         </div>
         </div>
         <div class="col-md-4 mb-3">
-        <label for="validationCustomUsername">Username</label>
+        <label for="#email-signup">Email</label>
         <div class="input-group">
             <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <span class="input-group-text" id="inputGroupPrepend"><i class="fa fa-envelope"></i></span>
             </div>
             <input
             type="text"
             class="form-control"
-            id="validationCustomUsername"
+            id="#email-signup"
             aria-describedby="inputGroupPrepend"
             required
             />
             <div class="invalid-feedback">
-            Please choose a username.
+            Please choose an Email Address!
             </div>
         </div>
         </div>
+        <div class="col-md-4 mb-3">
+          <label for="#password-signup">Password</label>
+          <div class="input-group">
+              <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupPrepend">Password</i></span>
+              </div>
+              <input
+              type="text"
+              class="form-control"
+              id="#password-signup"
+              aria-describedby="inputGroupPrepend"
+              required
+              />
+              <div class="invalid-feedback">
+              Please choose a Password!
+              </div>
+          </div>
+          </div>
+  
     </div>
     <div class="form-group">
         <div class="form-check">
@@ -122,18 +141,6 @@
     <button class="btn btn-primary" type="submit">Submit form</button>
     </form>
 </div>
-
-<script>
-
-(function() {
-  'use strict'; window.addEventListener('load', function() { 
-     var forms = document.getElementsByClassName('needs-validation'); 
-     var validation = Array.prototype.filter.call(forms,
-  function(form) { form.addEventListener('submit', function(event) { if
-  (form.checkValidity() === false) { event.preventDefault();
-  event.stopPropagation(); } form.classList.add('was-validated'); }, false); });
-  }, false); })();
-</script>
 
 <script src="https://code.jquery.com/jquery-3.6.1.js" 
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" 
