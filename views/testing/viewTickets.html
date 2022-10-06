@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ticket Scholar</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" 
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" 
+            crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" 
+          crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" 
+            integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" 
+            crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:light,extralight,thin,regular,bold,semibold,medium,extrabold,black&display=swap">
+    <link href="../../public/styles/dark-mode.css" rel="stylesheet"/>
+    <link href="../../public/styles/viewTickets.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm">
+    
+      <a class="navbar-brand logo" href="#">
+        <img src="../../public/images/ticketmaster - 11@2x.png" class="img-fluid" id="logo" alt="TicketScholar Logo" style="width: 20rem;">
+      </a>
+      <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#collapse_nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>      
+      <div class="collapse navbar-collapse" id="collapse_nav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">My Tickets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign In</a>
+        </li>
+        <li class="nav-item">
+          <div class="nav-link">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="darkSwitch">
+              <label class="custom-control-label pl-2" id="label" for="darkSwitch"></label>
+            </div>
+          </div>                   
+        </li>
+      </ul>        
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Event / Artist Name</h1>
+        <div class="pText">Location, City</div>
+        <div class="pText">Time, Date</div>
+      </div>
+    </div>
+    <div class="container-fluid ticket-card">
+      <div class="description">
+        <div>
+          <h4>Section 1 | Row: A</h3>
+          <p>Unrestricted View</p>
+        </div>
+        <div>
+          <h5>$302</h5>
+          <p>each</p>
+        </div>
+      </div>
+      <div class="button-div">
+        <button type="button" class="btn btn-primary select-btn">Select</button>
+      </div>
+    </div>
+    <div class="container-fluid ticket-card">
+        <div class="description">
+          <div>
+            <h4>Section 1 | Row: F</h3>
+            <p>Unrestricted View</p>
+          </div>
+          <div>
+            <h5>$246</h5>
+            <p>each</p>
+          </div>
+        </div>
+        <div class="button-div">
+          <button type="button" class="btn btn-primary select-btn">Select</button>
+        </div>
+      </div>
+      <div class="container-fluid ticket-card">
+        <div class="description">
+          <div>
+            <h4>Section 3 | Row: P</h3>
+            <p>Unrestricted View</p>
+          </div>
+          <div>
+            <h5>$125</h5>
+            <p>each</p>
+          </div>
+        </div>
+        <div class="button-div">
+          <button type="button" class="btn btn-primary select-btn">Select</button>
+        </div>
+      </div>
+      <div class="container-fluid ticket-card">
+        <div class="description">
+          <div>
+            <h4>Section 12 | Row: A</h3>
+            <p>Unrestricted View</p>
+          </div>
+          <div>
+            <h5>$128</h5>
+            <p>each</p>
+          </div>
+        </div>
+        <div class="button-div">
+          <button type="button" class="btn btn-primary select-btn">Select</button>
+        </div>
+      </div>
+      <div class="container-fluid ticket-card">
+        <div class="description">
+          <div>
+            <h4>Section 12 | Row: B</h3>
+            <p>Unrestricted View</p>
+          </div>
+          <div>
+            <h5>$125</h5>
+            <p>each</p>
+          </div>
+        </div>
+        <div class="button-div">
+          <button type="button" class="btn btn-primary select-btn">Select</button>
+        </div>
+      </div>
+      <div class="container-fluid ticket-card">
+        <div class="description">
+          <div>
+            <h4>Section 12 | Row: C</h3>
+            <p>Unrestricted View</p>
+          </div>
+          <div>
+            <h5>$125</h5>
+            <p>each</p>
+          </div>
+        </div>
+        <div class="button-div">
+          <button type="button" class="btn btn-primary select-btn">Select</button>
+        </div>
+      </div>                        
+  </main>
+</body>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" 
+            integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>   
+    <script src="https://kit.fontawesome.com/f4975ee129.js" 
+            crossorigin="anonymous"></script>
+    </script>
+    <script src="../../public/scripts/dark-mode-switch.js"></script>
+
+</html>

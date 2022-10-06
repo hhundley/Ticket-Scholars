@@ -23,11 +23,19 @@ Events.init(
       type: DataTypes.DATE,
       allowNull: false,
     },
-    filename: {
+    show_time: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     description: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    location: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    city: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -38,6 +46,15 @@ Events.init(
         key: 'id',
       },
     },
+    total_tickets:{
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    website_link:{
+      type: DataTypes.STRING,
+      allowNull: false,
+    }
+   
   },
   {
     sequelize,

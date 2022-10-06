@@ -4,250 +4,219 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <title>Ticket Scholar</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
           integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" 
           crossorigin="anonymous">
+   
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:light,extralight,thin,regular,bold,semibold,medium,extrabold,black&display=swap">
     <link href="../../public/styles/dark-mode.css" rel="stylesheet"/>
-    <link href="../../public/styles/index.css" rel="stylesheet">
+    <link href="../../public/styles/index.css" rel="stylesheet"/>
 
+    <script src="https://kit.fontawesome.com/f4975ee129.js" 
+            crossorigin="anonymous">
+    </script>
 </head>
 
-<body>
-  <header> 
-  <div class="container-fluid">
-    <nav class="navbar">
-      <nav class="navbar-nav">
-        <div class="title">
-          <img src="../../public/images/ticketmaster - 11@2x.png" id="logo" alt="TicketScholar Logo" style="width: 20rem;">
-          <div class="search ml-4 p-2">
-          <i class="fa-solid fa-magnifying-glass fa-2x ml-2 i"></i>
-            <form>
-              <input type="search" class="ml-3 text-dark" id="searchBar" name="searchBar" placeholder="Artist or City">
-            </form>
-          </div>
-        </div>
-      </nav>
-      <nav class="navbar-nav anchors">
-        <div class="nav-link mx-3">
-          <div>
-            <a href="#">My Tickets</a>
-          </div>
-        </div> 
-      </nav>
-      <nav class="navbar-nav anchors">
-        <div class="nav-link mx-3"> 
-          <div>
-            <a href="#">Sign In</a>
-          </div>
-        </div>
-      </nav>
-      <nav class="navbar-nav anchors">    
-        <div class="nav-link">
-          <div class="custom-control custom-switch">
-            <input type="checkbox" class="custom-control-input" id="darkSwitch">
-            <label class="custom-control-label pl-2" id="label" for="darkSwitch"></label>
-          </div>
-        </div>
-      </nav>  
-      
+  <body>
+    <header>
+    <nav class="navbar navbar-expand-md">
+    
+      <a class="navbar-brand logo" href="#">
+        <img src="../../public/images/ticketmaster - 11@2x.png" class="img-fluid" id="logo" alt="TicketScholar Logo" style="width: 20rem;">
+      </a>
+      <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#collapse_nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>      
+      <div class="collapse navbar-collapse" id="collapse_nav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">My Tickets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign In</a>
+        </li>
+        <li class="nav-item">
+          <div class="nav-link">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="darkSwitch">
+              <label class="custom-control-label pl-2" id="label" for="darkSwitch"></label>
+            </div>
+          </div>                   
+        </li>
+      </ul>        
+      </div>
     </nav>
-  </div>
-  <div class="container-fluid">
-    <nav class="navbar justify-content-center">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Concerts</a></li>
-          <li class="breadcrumb-item"><a href="#">Comedy & Theater</a></li>
-          <li class="breadcrumb-item"><a href="#">Sports Teams</a></li>
-          <li class="breadcrumb-item"><a href="#">Top Cities</a></li>
-        </ol>
-      </nav>
-    </nav>
-  </div>  
-  </header>
+      <div class="container-fluid">
+        <nav class="navbar justify-content-center">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#popular">Popular</a></li>
+              <li class="breadcrumb-item"><a href="#tours">Tours</a></li>
+              <li class="breadcrumb-item"><a href="#rockPop">Rock/Pop</a></li>
+              <li class="breadcrumb-item"><a href="#country">Country/Bluegrass</a></li>
+            </ol>
+          </nav>
+        </nav>
+      </div>
+    </header>
 
-  <main>
-    <div class="container-fluid my-5">
-      <h3 class="ml-3 mb-3">Recently Viewed</h3>
-      <div class="row ml-3">       
-        <div class="card col-3 p-0 mr-4">
-          <img class="card-img-top" src="../../public/images/02-cosmos-flowers.jpg" alt="Card img top">
-          <div class="card-body p-0">
-            <h5 class="card-title">Date & Time</h5>
-            <h5 class="card-title">Name of Band</h5>
-            <p class="card-text">Location</p>
+    <main>
+      <div id="popular" class="container-fluid my-5">
+        <h3 class="product-category">Most Popular</h3>
+        <div class="row ml-3">
+          <div class="card col-3 p-0 mr-4">
+            <img
+              class="card-img-top"
+              src="../../public/images/image4.jpg"
+              alt="Card img top"
+            />
+            <div class="card-body p-0">
+              <h5 class="card-title">Date & Time</h5>
+              <h5 class="card-title">Jazz Hands and Snaps Mean Everything Tour</h5>
+              <p class="card-text">Location</p>
+            </div>
+          </div>
+          <div class="card col-3 p-0 mr-4">
+            <img
+              class="card-img-top"
+              src="../../public/images/pop-image10.jpg"
+              alt="Card img top"
+            />
+            <div class="card-body p-0">
+              <h5 class="card-title">Date & Time</h5>
+              <h5 class="card-title">Name of Band</h5>
+              <p class="card-text">Location</p>
+            </div>
+          </div>
+          <div class="card col-3 p-0 mr-4">
+            <img
+              class="card-img-top"
+              src="../../public/images/rock-image10.jpg"
+              alt="Card img top"
+            />
+            <div class="card-body p-0">
+              <h5 class="card-title">Date & Time</h5>
+              <h5 class="card-title">Name of Band</h5>
+              <p class="card-text">Location</p>
+            </div>
           </div>
         </div>
-        <div class="card col-3 p-0 mr-4">
-          <img class="card-img-top" src="../../public/images/02-cosmos-flowers.jpg" alt="Card img top">
-          <div class="card-body p-0">
-            <h5 class="card-title">Date & Time</h5>
-            <h5 class="card-title">Name of Band</h5>
-            <p class="card-text">Location</p>
-          </div>
+      </div>
+      <div id="tours" class="product">
+        <h3 class="product-category">On Tour Now/Recently Announced Tours</h3>
+        <button class="pre-btn">
+          <img src="../public/images/arrow.png" alt="" />
+        </button>
+        <button class="nxt-btn">
+          <img src="../public/images/arrow.png" alt="" />
+        </button>
+        <div id="container1" class="product-container">
+          <!-- cards with be created from javascript and placed here-->
         </div>
-        <div class="card col-3 p-0 mr-4">
-          <img class="card-img-top" src="../../public/images/06-fall-colors.jpg" alt="Card img top">
-          <div class="card-body p-0">
-            <h5 class="card-title">Date & Time</h5>
-            <h5 class="card-title">Name of Band</h5>
-            <p class="card-text">Location</p>
-          </div>
+      </div>
+      <div id="rockPop" class="product">
+        <h3 class="product-category">Rock/Pop Concerts</h3>
+        <button class="pre-btn">
+          <img src="../public/images/arrow.png" alt="" />
+        </button>
+        <button class="nxt-btn">
+          <img src="../public/images/arrow.png" alt="" />
+        </button>
+        <div id="container2" class="product-container">
+          <!-- cards with be created from javascript and placed here-->
         </div>
-      </div>   
-    </div>
-    <div class="container-fluid my-5">
-      <h3 class="ml-3 mb-3">Top Cities</h3>
-      <div class="row ml-3">       
-        <div class="card col-3 p-0 mr-4">
-          <img class="card-img-top" src="../../public/images/06-fall-colors.jpg" alt="Card img top">
-          <div class="card-body p-0">
-            <h5 class="card-title">Date & Time</h5>
-            <h5 class="card-title">Name of Band</h5>
-            <p class="card-text">Location</p>
-          </div>
+      </div>
+      <div id="country" class="product">
+        <h3 class="product-category">Country/Bluegrass Concerts</h3>
+        <button class="pre-btn">
+          <img src="../public/images/arrow.png" alt="" />
+        </button>
+        <button class="nxt-btn">
+          <img src="../public/images/arrow.png" alt="" />
+        </button>
+        <div id="container3" class="product-container">
+          <!-- cards with be created from javascript and placed here-->
         </div>
-        <div class="card col-3 p-0 mr-4">
-          <img class="card-img-top" src="../../public/images/02-cosmos-flowers.jpg" alt="Card img top">
-          <div class="card-body p-0">
-            <h5 class="card-title">Date & Time</h5>
-            <h5 class="card-title">Name of Band</h5>
-            <p class="card-text">Location</p>
-          </div>
-        </div>
-        <div class="card col-3 p-0 mr-4">
-          <img class="card-img-top" src="../../public/images/03-sand-sea-summer.jpg" alt="Card img top">
-          <div class="card-body p-0">
-            <h5 class="card-title">Date & Time</h5>
-            <h5 class="card-title">Name of Band</h5>
-            <p class="card-text">Location</p>
-          </div>
-        </div>
-      </div>   
-    </div>
-    <div class="container-fluid my-5">
-      <h3 class="ml-3 mb-3">Comedy & Theater</h3>
-      <div class="row ml-3">       
-        <div class="card col-3 p-0 mr-4">
-          <img class="card-img-top" src="../../public/images/04-beach-chairs.jpg" alt="Card img top">
-          <div class="card-body p-0">
-            <h5 class="card-title">Date & Time</h5>
-            <h5 class="card-title">Name of Band</h5>
-            <p class="card-text">Location</p>
-          </div>
-        </div>
-        <div class="card col-3 p-0 mr-4">
-          <img class="card-img-top" src="../../public/images/05-beach-sunrise.jpg" alt="Card img top">
-          <div class="card-body p-0">
-            <h5 class="card-title">Date & Time</h5>
-            <h5 class="card-title">Name of Band</h5>
-            <p class="card-text">Location</p>
-          </div>
-        </div>
-        <div class="card col-3 p-0 mr-4">
-          <img class="card-img-top" src="../../public/images/06-fall-colors.jpg" alt="Card img top">
-          <div class="card-body p-0">
-            <h5 class="card-title">Date & Time</h5>
-            <h5 class="card-title">Name of Band</h5>
-            <p class="card-text">Location</p>
-          </div>
-        </div>
-      </div>   
-    </div>
-    <div class="container-fluid my-5">
-      <h3 class="ml-3 mb-3">Sports Teams</h3>
-      <div class="row ml-3">       
-        <div class="card col-3 p-0 mr-4">
-          <img class="card-img-top" src="../../public/images/07-autumn-mountains.jpg" alt="Card img top">
-          <div class="card-body p-0">
-            <h5 class="card-title">Date & Time</h5>
-            <h5 class="card-title">Name of Band</h5>
-            <p class="card-text">Location</p>
-          </div>
-        </div>
-        <div class="card col-3 p-0 mr-4">
-          <img class="card-img-top" src="../../public/images/08-frozen-river.jpg" alt="Card img top">
-          <div class="card-body p-0">
-            <h5 class="card-title">Date & Time</h5>
-            <h5 class="card-title">Name of Band</h5>
-            <p class="card-text">Location</p>
-          </div>
-        </div>
-        <div class="card col-3 p-0 mr-4">
-          <img class="card-img-top" src="../../public/images/09-winter-home.jpg" alt="Card img top">
-          <div class="card-body p-0">
-            <h5 class="card-title">Date & Time</h5>
-            <h5 class="card-title">Name of Band</h5>
-            <p class="card-text">Location</p>
-          </div>
-        </div>
-      </div>   
-    </div>
-    <section class="newsLetter">
+      </div>
+      <section class="newsLetter">
         <div class="h3Deals mb-3">
-        <h4>Epic events and incredible deals straight to your inbox</h4>     
+          <h4>Epic events and incredible deals straight to your inbox</h4>
         </div>
         <div class="h3Deals mb-3">
-        <input type="email" class="pl-3" id="newsletterEmail" placeholder="Email Address">
-        <button type="button" class="btn btn-outline-primary ml-3">Join the List</button>
+          <input
+            type="email"
+            class="pl-3"
+            id="newsletterEmail"
+            placeholder="Email Address"
+          />
+          <button type="button" class="btn btn-outline-primary ml-3">
+            Join the List
+          </button>
         </div>
         <div class="h3Deals">
-        <p>By signing up, you acknowledge and accept our <span><a href="#">privacy policy</a></span> and consent to receiving emails.</p>
-        </div>      
-    </section>
-  </main>
-  <footer>
-    <div class="py-4 footer">
-      <div class="col-3 divColumn">
-        <h5>Security</h5>
-        <ul class="securityList">
-          <li>Buy and sell with confidence</li>
-          <li>Customer service all the way to your seat</li>
-          <li>Every order is 100% guearenteed</li>
-        </ul>
+          <p>
+            By signing up, you acknowledge and accept our
+            <span><a href="#">privacy policy</a></span> and consent to receiving
+            emails.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="py-4 footer">
+        <div class="col-3 divColumn">
+          <h5>Security</h5>
+          <ul class="securityList">
+            <li>Buy and sell with confidence</li>
+            <li>Customer service all the way to your seat</li>
+            <li>Every order is 100% guearenteed</li>
+          </ul>
+        </div>
+        <div class="col-3 divColumn">
+          <h5>Our Company</h5>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">For Developers</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-3 divColumn">
+          <h5>Have Questions?</h5>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Ticket Scholar Community</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+        </div>
+        <div class="col-3 divColumn">
+          <h5>Live Events</h5>
+        </div>
       </div>
-      <div class="col-3 divColumn">
-        <h5>Our Company</h5>
-        <ul>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Affiliate Program</a></li>
-          <li><a href="#">Partners</a></li>
-          <li><a href="#">For Developers</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
+      <div class="col-3 mx-auto text-center text-muted">
+        &copy; Ticket Scholars 2022
       </div>
-      <div class="col-3 divColumn">
-        <h5>Have Questions?</h5>
-        <ul>
-          <li><a href="#">Help Center</a></li>
-          <li><a href="#">Ticket Scholar Community</a></li>
-          <li><a href="#">Gift Cards</a></li>
-        </ul>
-      </div>
-      <div class="col-3 divColumn">
-        <h5>Live Events</h5>
-      </div>
-    </div>
-    <div class="col-3 mx-auto text-center text-muted">&copy; Ticket Scholars 2022</div>
+
   </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.1.js" 
             integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" 
             crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" 
-            integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
-            crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" 
             integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" 
             crossorigin="anonymous">
     </script>
-    <script src="https://kit.fontawesome.com/f4975ee129.js" 
-            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" 
+            integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
     <script src="../../public/scripts/dark-mode-switch.js"></script>
-</body>
+    <script src="../../public/scripts/homefunction.js"></script>
+    <script src="../../public/scripts/sideBar.js"></script>
+  </body>
 </html>

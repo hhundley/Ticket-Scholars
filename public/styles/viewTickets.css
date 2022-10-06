@@ -1,0 +1,232 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 123, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler {
+    border-color: rgb(0, 123, 255);
+}
+.nav-link{
+    text-align: end;
+}
+.navbar-expand-sm .navbar-collapse {
+    justify-content: flex-end;
+} 
+.jumbotron {
+    background-image: url(../images/01-blossoming-apricot.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.pText {
+    line-height: 32px;
+    font-size: 24px;
+}
+.ticket-card {
+    padding: 12px 64px;
+    flex-direction: column;
+    margin-bottom: 40px;
+    border-bottom: 1px solid grey;
+}
+.description {
+    display: flex;
+    flex: 1 0 auto;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}   
+.button-div {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 10px;   
+}
+.btn.select-btn {
+    letter-spacing: .5px;
+    width: 180px;
+}
+@media (max-width: 424px) {
+.navbar {
+  flex-direction: column;
+  align-items: unset;
+}
+.navbar-nav {
+  align-items: unset;
+}
+.navbar-toggler {
+  align-self: center;
+}
+.navbar.navbar-expand-sm{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.navbar-brand.logo {
+  justify-self: center;
+}
+@media (max-width:424px) {
+html, body {
+  min-width: 424px;
+}
+}
+}
+
+/* Sidebar Styling */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+}
+#sidebar.active {
+    margin-left: -250px;
+}
+a[data-toggle="collapse"] {
+    position: relative;
+}
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+@media (max-width: 768px) {
+#sidebar {
+    margin-left: -250px;
+}
+#sidebar.active {
+    margin-left: 0;
+}
+}
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+#sidebar a, #sidebar a:hover, #sidebar a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+#sidebar {
+    /* don't forget to add all the previously mentioned styles here too */
+    background: #007bff36;
+    transition: all 0.3s, color 0s;
+}
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #007bffad;
+}
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #007bff;
+}
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    background: #007bff;
+}
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #007bff;
+}
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #007bff;
+}
+
+/* Main Content Styles */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+}
+#content h1 {
+    text-align: left;
+    margin: 1rem;
+}
+#content .section {
+    border: 1px solid grey;
+    padding: 32px;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+#content .break {
+    display:flex;
+}
+.section {
+    border-radius: 6px;
+    background-color: #f1f1f1;
+}
+.display-tickets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ticket-info-card {
+    width: 30%;
+    margin: 0px 14px 32px 14px;
+}
+@media (max-width: 1211px) {
+.ticket-info-card {
+    width: 44%;
+}
+}
+@media (max-width: 839px) {
+.ticket-info-card {
+    margin: 0px 8px 32px 8px;
+}
+}
+@media (max-width: 588px) {
+.display-tickets {
+    flex-direction: column;
+    align-content: center;
+}
+.ticket-info-card {
+    width: 100%;
+}
+}
+.section.half {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.divide {
+    margin: 16px;
+    border-left: 1px solid grey;
+}
+.hr {
+    border: 1px solid grey;
+    width: 100%;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.user-info {
+    display: flex;
+    flex: 1 0 auto;
+    flex-flow: row wrap; 
+    width: 100%;
+}
+.user-name, .user-details {
+    flex-basis: 50%;
+    max-width: 50%;
+}
