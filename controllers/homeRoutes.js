@@ -41,12 +41,17 @@ router.get('/profile', withAuth, async (req, res) => {
   }
 });
 
-router.get("/login", (req, res) => {
+router.get('/login', (req, res) => {
   if (req.session.logged_in) {
-    res.redirect("/");
+    res.redirect('/profile');
     return;
   }
-  res.render("login");
+  
+  res.render('login');
 });
+
+router.get('/signup', (req, res) => {
+  res.render('signup');
+})
 
 module.exports = router;
