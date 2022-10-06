@@ -32,14 +32,14 @@ const signupFormHandler = async (event) => {
   const password = document.querySelector("#password-signup").value.trim();
   // Send a post route to api
   if (first_name && last_name && email && password) {
-    const response = await fetch("/api/users", {
-      method: "POST",
+    const response = await fetch(`/api/users`, {
+      method: 'POST',
       body: JSON.stringify({ first_name, last_name, email, password }),
-      headers: { "Content-Type": "application/json" },
+      headers: { 'Content-Type': 'application/json' },
     });
     // redirect to profilePage if successful
     if (response.ok) {
-      document.location.replace("/profile");
+      document.location.replace('/profile');
     } else {
       alert(response.statusText);
     }
