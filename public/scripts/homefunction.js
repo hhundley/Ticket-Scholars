@@ -140,9 +140,9 @@ const ticketcart30 = document.getElementById("30");
 ticketcart30.addEventListener("click", viewTickets);
 
 
-const firstTenImages = eventsForTicketScholars.splice(10, 31);
-const secondTenImages = eventsForTicketScholars.splice(0, 21);
-const thirdTenImages = eventsForTicketScholars.splice(0, 10);
+// const firstTenImages = eventsForTicketScholars.splice(10, 31);
+// const secondTenImages = eventsForTicketScholars.splice(0, 21);
+// const thirdTenImages = eventsForTicketScholars.splice(0, 10);
 
 // code below is for Plan B
 
@@ -155,98 +155,98 @@ const thirdTenImages = eventsForTicketScholars.splice(0, 10);
 // var imgArray = new Array();
 
 // imgArray[0] = new Image();
-// imgArray[0] = "../../public/images/image1.jpg";
+// imgArray[0] = "images/image1.jpg";
 
 // imgArray[1] = new Image();
-// imgArray[1] = "../../public/images/image2.jpg";
+// imgArray[1] = "images/image2.jpg";
 
 // imgArray[2] = new Image();
-// imgArray[2] = "../../public/images/image3.jpg";
+// imgArray[2] = "images/image3.jpg";
 
 // imgArray[3] = new Image();
-// imgArray[3] = "../../public/images/image4.jpg";
+// imgArray[3] = "images/image4.jpg";
 
 // imgArray[4] = new Image();
-// imgArray[4] = "../../public/images/image5.jpg";
+// imgArray[4] = "images/image5.jpg";
 
 // imgArray[5] = new Image();
-// imgArray[5] = "../../public/images/image6.jpg";
+// imgArray[5] = "images/image6.jpg";
 
 // imgArray[6] = new Image();
-// imgArray[6] = "../../public/images/image7.jpg";
+// imgArray[6] = "images/image7.jpg";
 
 // imgArray[7] = new Image();
-// imgArray[7] = "../../public/images/image8.jpg";
+// imgArray[7] = "images/image8.jpg";
 
 // imgArray[8] = new Image();
-// imgArray[8] = "../../public/images/image9.jpg";
+// imgArray[8] = "images/image9.jpg";
 
 // imgArray[9] = new Image();
-// imgArray[9] = "../../public/images/image10.jpg";
+// imgArray[9] = "images/image10.jpg";
 
 // var imgArray1 = new Array();
 
 // imgArray1[0] = new Image();
-// imgArray1[0] = "../../public/images/pop-image1.jpg";
+// imgArray1[0] = "images/pop-image1.jpg";
 
 // imgArray1[1] = new Image();
-// imgArray1[1] = "../../public/images/pop-image2.jpg";
+// imgArray1[1] = "images/pop-image2.jpg";
 
 // imgArray1[2] = new Image();
-// imgArray1[2] = "../../public/images/pop-image3.jpg";
+// imgArray1[2] = "images/pop-image3.jpg";
 
 // imgArray1[3] = new Image();
-// imgArray1[3] = "../../public/images/pop-image4.jpg";
+// imgArray1[3] = "images/pop-image4.jpg";
 
 // imgArray1[4] = new Image();
-// imgArray1[4] = "../../public/images/pop-image5.jpg";
+// imgArray1[4] = "images/pop-image5.jpg";
 
 // imgArray1[5] = new Image();
-// imgArray1[5] = "../../public/images/pop-image6.jpg";
+// imgArray1[5] = "images/pop-image6.jpg";
 
 // imgArray1[6] = new Image();
-// imgArray1[6] = "../../public/images/pop-image7.jpg";
+// imgArray1[6] = "images/pop-image7.jpg";
 
 // imgArray1[7] = new Image();
-// imgArray1[7] = "../../public/images/pop-image8.jpg";
+// imgArray1[7] = "images/pop-image8.jpg";
 
 // imgArray1[8] = new Image();
-// imgArray1[8] = "../../public/images/pop-image9.jpg";
+// imgArray1[8] = "images/pop-image9.jpg";
 
 // imgArray1[9] = new Image();
-// imgArray1[9] = "../../public/images/pop-image10.jpg";
+// imgArray1[9] = "images/pop-image10.jpg";
 
 // var imgArray2 = new Array();
 
 // imgArray2[0] = new Image();
-// imgArray2[0] = "../../public/images/rock-image1.jpg";
+// imgArray2[0] = "images/rock-image1.jpg";
 
 // imgArray2[1] = new Image();
-// imgArray2[1] = "../../public/images/rock-image2.jpg";
+// imgArray2[1] = "images/rock-image2.jpg";
 
 // imgArray2[2] = new Image();
-// imgArray2[2] = "../../public/images/rock-image3.jpg";
+// imgArray2[2] = "images/rock-image3.jpg";
 
 // imgArray2[3] = new Image();
-// imgArray2[3] = "../../public/images/rock-image4.jpg";
+// imgArray2[3] = "images/rock-image4.jpg";
 
 // imgArray2[4] = new Image();
-// imgArray2[4] = "../../public/images/rock-image5.jpg";
+// imgArray2[4] = "images/rock-image5.jpg";
 
 // imgArray2[5] = new Image();
-// imgArray2[5] = "../../public/images/rock-image6.jpg";
+// imgArray2[5] = "images/rock-image6.jpg";
 
 // imgArray2[6] = new Image();
-// imgArray2[6] = "../../public/images/rock-image7.jpg";
+// imgArray2[6] = "images/rock-image7.jpg";
 
 // imgArray2[7] = new Image();
-// imgArray2[7] = "../../public/images/rock-image8.jpg";
+// imgArray2[7] = "images/rock-image8.jpg";
 
 // imgArray2[8] = new Image();
-// imgArray2[8] = "../../public/images/rock-image9.jpg";
+// imgArray2[8] = "images/rock-image9.jpg";
 
 // imgArray2[9] = new Image();
-// imgArray2[9] = "../../public/images/rock-image10.jpg";
+// imgArray2[9] = "images/rock-image10.jpg";
 
 // var eventName = [
 //   "Rolling Down A Hill Tour",
