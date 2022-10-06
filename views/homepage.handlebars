@@ -7,7 +7,7 @@
     <header>
     <nav class="navbar navbar-expand-md">
     
-      <a class="navbar-brand logo" href="#">
+      <a class="navbar-brand logo" href="/">
         <img src="/images/ticketmaster - 11@2x.png" class="img-fluid" id="logo" alt="TicketScholar Logo" style="width: 20rem;">
       </a>
       <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#collapse_nav">
@@ -19,15 +19,18 @@
           <a class="nav-link" href="/profile">My Tickets</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/login">Sign In</a>
+          <a class="nav-link" href="/login">Log In</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/signup">Sign Up</a>
+        </li>        
         <li class="nav-item">
           <div class="nav-link">
             <div class="custom-control custom-switch">
               <input type="checkbox" class="custom-control-input" id="darkSwitch">
               <label class="custom-control-label pl-2" id="label" for="darkSwitch"></label>
             </div>
-          </div>                   
+          </div>
         </li>
       </ul>        
       </div>
@@ -59,7 +62,7 @@
             <div class="card-body p-0">
               <h5 class="card-title">7:00PM / 2022-10-04</h5>
               <h5 class="card-title">Jazz Hands and Snaps Mean Everything Tour</h5>
-              <p class="card-text">ticket to Jazz Hands tour</p>
+              <p class="card-text">Fitzgerald's favorite jester is back in SA</p>
             </div>
           </div>
           <div class="card col-3 p-0 mr-4">
@@ -71,7 +74,7 @@
             <div class="card-body p-0">
               <h5 class="card-title">7:00PM / 2022-10-01</h5>
               <h5 class="card-title">Rolling Down A Hill Tour</h5>
-              <p class="card-text">ticket to Rolling Down A Hill tour</p>
+              <p class="card-text">Now for the 25 year in a row, the Lumberjack Loggers are Live again here in Austin, TX.</p>
             </div>
           </div>
           <div class="card col-3 p-0 mr-4">
@@ -83,7 +86,7 @@
             <div class="card-body p-0">
               <h5 class="card-title">7:00PM / 2022-10-25</h5>
               <h5 class="card-title">Christmas Early tour</h5>
-              <p class="card-text">ticket to the Christmas Early tour</p>
+              <p class="card-text">Christmas came really early, like before Halloween</p>
             </div>
           </div>
         </div>
@@ -102,7 +105,106 @@
             {{> events}}
           {{/each}}
 
-        </div>
+{{!-- <div class="product-card"> 
+                <div class="product-image"> 
+                    <img src="images/image1.jpg" class="product-image" alt="">
+                    <button type="button" id="1" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">8:00PM / 2022-10-02</h5>
+                    <h5 class="card-title">Flapjacks for Dinner World Tour</h5>
+                    <p class="card-text">Bacon Pancakes debut into the Music Scene starts in Dallas, TX</p>
+                </div>
+            </div>
+           <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image2.jpg" class="product-image" alt="">
+                    <button type="button" id="2" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">6:00PM / 2022-10-03</h5>
+                    <h5 class="card-title">Summer of 0ur Lyfes Tour</h5>
+                    <p class="card-text">BRRRR be BRRRING in New BRRRRRaunfels</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image3.jpg" class="product-image" alt="">
+                    <button type="button" id="3" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">7:00PM / 2022-10-04</h5>
+                    <h5 class="card-title">Jazz Hands and Snaps Mean Everything Tour</h5>
+                    <p class="card-text">Fitzgerald's favorite jester is back in SA</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image4.jpg" class="product-image" alt="">
+                    <button type="button" id="4" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">6:00PM / 2022-10-05</h5>
+                    <h5 class="card-title">Touring at Its Best Tour</h5>
+                    <p class="card-text">Rain or Shine, Da-tours are coming live in Corpus</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image5.jpg" class="product-image" alt="">
+                    <button type="button" id="5" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">8:00PM / 2022-20-09</h5>
+                    <h5 class="card-title">Dreams Tour</h5>
+                    <p class="card-text">Come see what no one is talking about</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image6.jpg" class="product-image" alt="">
+                    <button type="button" id="6" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">7:00PM / 2022-10-11</h5>
+                    <h5 class="card-title">Seeing Sounds Tour</h5>
+                    <p class="card-text">Smores and the Sugar Shack is a artist venue match made in heaven</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image7.jpg" class="product-image" alt="">
+                    <button type="button" id="7" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">6:00PM / 2022-20-11</h5>
+                    <h5 class="card-title">Dont Tell Ma Tour</h5>
+                    <p class="card-text">Bunch of dads trying to get out of dish duty</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image8.jpg" class="product-image" alt="">
+                    <button type="button" id="8" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">7:00PM / 2022-10-25</h5>
+                    <h5 class="card-title">i wanna be someone Tour</h5>
+                    <p class="card-text">Nobody rocks with a sound that you probably never heard of</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/image9.jpg" class="product-image" alt="">
+                    <button type="button" id="9" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">7:00PM / 2022-10-05</h5>
+                    <h5 class="card-title">Bring back the Snack Wrap Tour</h5>
+                    <p class="card-text">If doja cat can bring back the mexican pizza, we can bring back the snack wrap</p>
+                </div>
+            </div> --}}
+        </div> 
       </div>
       <div id="rockPop" class="product">
         <h3 class="product-category">Rock/Pop Concerts</h3>
@@ -118,8 +220,107 @@
             {{> events}}
           {{/each}}
 
+          {{!-- <div class="product-card"> 
+                <div class="product-image"> 
+                    <img src="images/pop-image1.jpg" class="product-image" alt="">
+                    <button type="button" id="10" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">7:00PM / 2022-10-23</h5>
+                    <h5 class="card-title">You are at your best when you're crying World Tour</h5>
+                    <p class="card-text">Bring the wine, and we will bring the tears</p>
+                </div>
+            </div>
+           <div class="product-card">
+                <div class="product-image">
+                    <img src="images/pop-image2.jpg" class="product-image" alt="">
+                    <button type="button" id="11" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">8:00PM / 2022-10-19</h5>
+                    <h5 class="card-title">Orges are like Onions, ode to Shrek Tour</h5>
+                    <p class="card-text">mud fest for Shrek fans</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/pop-image3.jpg" class="product-image" alt="">
+                    <button type="button" id="12" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">6:00PM / 2022-10-20</h5>
+                    <h5 class="card-title">NOW THATS WHAT I CALL MUSIC 483 LIVE</h5>
+                    <p class="card-text">Cover artists trying to cover an album we didnt ask for</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/pop-image4.jpg" class="product-image" alt="">
+                    <button type="button" id="13" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">7:00PM / 2022-10-25</h5>
+                    <h5 class="card-title">Christmas Came Early Tour</h5>
+                    <p class="card-text">Christmas came really early, like before Halloween</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/pop-image5.jpg" class="product-image" alt="">
+                    <button type="button" id="14" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">6:00PM / 2022-11-23</h5>
+                    <h5 class="card-title">Coding Makes The World Go Round</h5>
+                    <p class="card-text">Its really just a bunch of 0s and 1s if you think about it</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/pop-image6.jpg" class="product-image" alt="">
+                    <button  type="button" id="15" lass="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">7:30PM / 2023-05-27</h5>
+                    <h5 class="card-title">Green Pasters are where you water tour</h5>
+                    <p class="card-text">Enjoy the spring with Water Can Sunday</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/pop-image7.jpg" class="product-image" alt="">
+                    <button type="button" id="16" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">7:00PM / 2022-12-13</h5>
+                    <h5 class="card-title">Why is Bologna spelled Bologna</h5>
+                    <p class="card-text">If you dont get a turkey club with bacon your wrong. Plus live music</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/pop-image8.jpg" class="product-image" alt="">
+                    <button type="button" id="17" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">8:00PM / 2022-01-25</h5>
+                    <h5 class="card-title">Duolingo speak easy tour</h5>
+                    <p class="card-text">Hoping Dua Lipa shows up, not doing this event for any other reason</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/pop-image9.jpg" class="product-image" alt="">
+                    <button type="button" id="18" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">7:00PM / 2023-01-20</h5>
+                    <h5 class="card-title">Coffee with You tour</h5>
+                    <p class="card-text">No, there will not be alcohol only coffee</p>
+                </div>
+            </div> --}}
         </div>
-      </div>
+      </div> 
       <div id="country" class="product">
         <h3 class="product-category">Country/Bluegrass Concerts</h3>
         <button class="pre-btn">
@@ -134,8 +335,107 @@
             {{> events}}
           {{/each}}
 
+                    {{!-- <div class="product-card"> 
+                <div class="product-image"> 
+                    <img src="images/rock-image1.jpg" class="product-image" alt="">
+                    <button type="button" id="19" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">8:00PM / 2023-03-14</h5>
+                    <h5 class="card-title">Fried Sushi is Better World Tour</h5>
+                    <p class="card-text">Sumo boy holding it down at Kura. Half price rolls during the concert only</p>
+                </div>
+            </div>
+           <div class="product-card">
+                <div class="product-image">
+                    <img src="images/rock-image2.jpg" class="product-image" alt="">
+                    <button type="button" id="20" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">7:00PM / 2023-04-01</h5>
+                    <h5 class="card-title">Dont Get Mad, Get Glad Tour</h5>
+                    <p class="card-text">Please dont bring trash bags, Stubbs will have enough of those on hand</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/rock-image3.jpg" class="product-image" alt="">
+                    <button type="button" id="21" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">6:00PM / 2023-05-04</h5>
+                    <h5 class="card-title">Wish you were here tour</h5>
+                    <p class="card-text">Awkward synth noises to be expected</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/rock-image4.jpg" class="product-image" alt="">
+                    <button type="button" id="22" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">7:30PM / 2022-11-25</h5>
+                    <h5 class="card-title">Tell me why tour</h5>
+                    <p class="card-text">Throw back to the 90s</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/rock-image5.jpg" class="product-image" alt="">
+                    <button type="button" id="23" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">7:31 / 2022-11-26</h5>
+                    <h5 class="card-title">Aint nothing but a Heartache tour</h5>
+                    <p class="card-text">See what I did there?</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/rock-image6.jpg" class="product-image" alt="">
+                    <button type="button" id="24" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">7:45 / 2022-12-01</h5>
+                    <h5 class="card-title">1000 miles is a lot to walk tour</h5>
+                    <p class="card-text">Vanessa is going to sue us, please buy tickets</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/rock-image7.jpg" class="product-image" alt="">
+                    <button type="button" id="25" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">7:30PM / 2022-11-27</h5>
+                    <h5 class="card-title">Biscuits and Gravy</h5>
+                    <p class="card-text">Hashbrowns smothered and covered please</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/rock-image8.jpg" class="product-image" alt="">
+                    <button type="button" id="26" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">6:30PM / 2023-11-27</h5>
+                    <h5 class="card-title">Really Running Out of Ideas</h5>
+                    <p class="card-text">Standing room only and only while the light is green</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/rock-image9.jpg" class="product-image" alt="">
+                    <button type="button" id="27" class="card-btn">Add Ticket</button>
+                </div>
+                <div class="product-info">
+                    <h5 class="card-title">8:30PM / 2022-04-17</h5>
+                    <h5 class="card-title">Beach Party Vibing Tour</h5>
+                    <p class="card-text">Float the river and enjoy the tunes</p>
+                </div>
+            </div> --}}
         </div>
-      </div>
+      </div> 
       <section class="newsLetter">
         <div class="h3Deals mb-3">
           <h4>Epic events and incredible deals straight to your inbox</h4>
@@ -197,12 +497,10 @@
       </div>
     </footer>
 
+    <script src="scripts/homefunction.js"></script>
+
   </body>
 
-    <script src="https://code.jquery.com/jquery-3.6.1.js" 
-            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" 
-            crossorigin="anonymous">
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" 
             integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" 
             crossorigin="anonymous">
@@ -211,8 +509,7 @@
             integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
             crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
-    <script src="../../public/scripts/dark-mode-switch.js"></script>
-    <script src="../../public/scripts/homefunction.js"></script>
-    <script src="../../public/scripts/sideBar.js"></script>
+    <script src="/scripts/dark-mode-switch.js"></script>
+    <script src="/scripts/homefunction.js"></script>
 
 </html>

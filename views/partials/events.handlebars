@@ -1,13 +1,14 @@
 <div class="row align-center mb-5">
   <div class="product-card"> 
     <div class="product-image"> 
-        <img src="{{event.website_link}}" class="product-thumb" alt="">
+        <img id="event_image" src="{{event.website_link}}" class="product-thumb" alt="">
         <button class="card-btn">Add Ticket</button>
     </div>
     <div class="product-info">
-        <h5 class="card-title">{{event.show_time}} + ' / ' + {{event.show_date}}</h5>
-        <h5 class="card-title">{{event.title}}</h5>
-        <p class="card-title">{{event.description}}</p>
+        <h5 class="card-title"><span id="show_time">{{event.show_time}}</span> + ' / ' + <span id="show_date">{{event.show_date}}</span></h5>
+        <h5 class="card-title"><span id="show_title">{{event.title}}</span></h5>
+        <p class="card-title"><span id="show_description">{{event.description}}</span></p>
+        <p class="card-title"><span id="show_location">{{event.location}}</span></p>
     </div>
   </div>
 </div>

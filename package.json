@@ -17,7 +17,6 @@
     "mysql2": "^2.3.3",
     "sequelize": "^6.23.1"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hhundley/Ticket-Scholars.git"

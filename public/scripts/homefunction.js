@@ -16,8 +16,28 @@ productContainers.forEach((item, i) => {
 });
 
 function viewTickets() {
-  location.href = 'viewTickets.handlebars';
-}
+  const image = document.getElementById("event_image").src;
+  const time = document.getElementById("event_time").innerHTML;
+  const event_Name = document.getElementById("event_title").innerHTML;
+  const description = document.getElementById("event_description").innerHTML;
+  const location = document.getElementById("event_location").innerHTML;
+  // Send a post route to api
+  if (image && time && event_Name && description && location) {
+    const response = fetch("/api/concerts", {
+      method: "POST",
+      body: JSON.stringify({image, time, event_Name, description, location}),
+      headers: { "Content-Type": "application/json" },
+    });
+    // redirect to profilePage if successful
+    if (response.ok) {
+      document.location.replace("/profile");
+    } else {
+      alert(response.statusText);
+    }
+  }
+};
+  
+
 
 const ticketcart1 = document.getElementById("1");
 
@@ -363,10 +383,9 @@ ticketcart30.addEventListener("click", viewTickets);
 //   title1.className = "card-title";
 //   title2.className = "card-title";
 //   title3.className = "card-title";
-//   // title1.textContent = eventName[i];
-// title1.textContent = '{{title}}';
+//   title1.textContent = eventName[i];
 //   title2.textContent = eventName1[i];
-//   title3.textContent = eventName[i];
+//   title3.textContent = eventName2[i];
 //   location1.className = "card-text";
 //   location2.className = "card-text";
 //   location3.className = "card-text";
