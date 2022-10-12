@@ -13,6 +13,7 @@ const loginFormHandler = async (event) => {
         });
 
         if (response.ok) {
+            console.log("nice!");
             document.location.replace('/profile');
         } else {
             alert(response.statusText);
